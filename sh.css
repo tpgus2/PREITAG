@@ -86,16 +86,9 @@ body li {
   width: 1920px;
   height: 800px;
 }
-#mainbanner .main1 .main_black {
-  width: 660px;
-  height: 800px;
-  background-color: #000000;
-}
 #mainbanner .main1 .main_txt {
   top: 22%;
-  left: 49%;
-}
-#mainbanner .main1 .main_txt .main_title {
+  left: -45%;
   color: #fff;
   font-size: 11rem;
   line-height: 0.75;
@@ -114,4 +107,36 @@ body li {
   background-size: cover;
   width: 1920px;
   height: 800px;
+}
+#mainbanner .main_black {
+  width: 690px;
+  height: 800px;
+  background-color: #000000;
+}
+#mainbanner .main_a {
+  color: #000;
+  font-weight: 600;
+  font-size: 1.5rem;
+  display: block;
+  width: 450px;
+  height: 80px;
+  background-color: #fff;
+  text-align: center;
+  line-height: 3;
+}
+#mainbanner .main_txt {
+  top: 22%;
+  left: 16%;
+}
+#mainbanner .main_txt .main_subtxt {
+  color: #fff;
+  font-size: 1.1rem;
+  line-height: 0.7;
+  font-weight: 400;
+  margin: 100px 0 170px;
+}
+#mainbanner .main_txt .main_title {
+  color: #fff;
+  font-size: 3rem;
+  font-weight: 600;
 }
