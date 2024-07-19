@@ -4,8 +4,8 @@ body{
     margin: 0;
 
     a{
-     text-decoration: none;
-     color: #000000;
+        text-decoration: none;
+        color: #000000;
     }
     li{
         list-style: none;
@@ -14,7 +14,53 @@ body{
         padding: 0;
         margin: 0;
     }
+    .maintxt{
+        color: #000;
+        font-family: 'Helvetica73-Extended';
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: -1.6px;
+    }
+    .subtxt{
+        color: #333;
+        font-family: "Noto Sans KR";
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+    
+    .subproduct{
+        color: #FFF;
+        font-family: 'Helvetica75';
+        font-size: 34px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: -1.36px;
+        opacity: 1;
+        padding: 0.5rem;
+        bottom: 0;
+        left: 0;  right: 0;
+    
+        .small{
+            top: 90%; 
+        }
 
+        .tall{
+            top: 80%;
+        }
+    }
+
+    .mx20 {
+    margin: 0 20px;
+    }
+
+    .mt20{
+    margin-top: 20px;
+    }
 }
 #hd{
     
@@ -199,22 +245,37 @@ body{
         width: 100%;
         height: 700px;
         background-color: #000;
+
+    .overlay{
+        width: 364px;
+        height: 350px;
+        background-color: #000;
+        opacity:0;
+        top: 0; bottom: 0;
+        right: 0; left: 0;
+        color: white;
+
+        &:hover{
+            opacity: 0.75;
+        }
+    }
+   
     
     h2{
         color: #FFF;
         font-family: "Helvetica73-Extended";
-        font-size: 44px;
+        font-size: 40px;
         font-style: normal;
         font-weight: 700;
         line-height: normal;
         letter-spacing: -1.76px;
     }
-    span{
+    .product_subtxt{
         color: #FFF;
         font-family: "Noto Sans KR";
         font-size: 18px;
         font-style: normal;
-        font-weight: 400;
+        font-weight: 300;
         line-height: normal;
     }
     .point_txt{
@@ -225,5 +286,28 @@ body{
         line-height: normal;
         text-align: end;
         padding-right: 2rem;
+    }
+}
+
+#zerowaste{
+    .swiper {
+      width: 100%;
+      height: 100%;
+    }
+
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
     }
 }
