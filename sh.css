@@ -57,6 +57,12 @@ body .mx20 {
 body .mt20 {
   margin-top: 20px;
 }
+body .mt200 {
+  margin-top: 200px;
+}
+body .pt80 {
+  padding-top: 80px;
+}
 
 #hd {
   background-color: #000000;
@@ -125,7 +131,8 @@ body .mt20 {
   display: block;
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 #mainbanner .main1 {
   background-image: url("/img/mainbanner1.jpg");
@@ -239,6 +246,22 @@ body .mt20 {
   padding-right: 2rem;
 }
 
+#about_prietag .about_smdiv {
+  width: calc((100% - 640px) / 2);
+  height: 550px;
+}
+#about_prietag .about_talldiv {
+  width: 600px;
+  height: 550px;
+}
+
+#zerowaste {
+  height: 300px;
+}
+#zerowaste .zerotxt {
+  width: calc(50% - 249px);
+  height: 300px;
+}
 #zerowaste .swiper {
   width: 100%;
   height: 100%;
@@ -251,9 +274,30 @@ body .mt20 {
   justify-content: center;
   align-items: center;
 }
+#zerowaste .swiperdiv {
+  width: calc(50% + 249px);
+  height: 100%;
+}
 #zerowaste .swiper-slide img {
   display: block;
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#zerowaste .backgroundimg {
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 380px;
+  height: 300px;
+  max-width: 100%;
+}
+#zerowaste .slide1 {
+  background-image: url("./img/history1.jpg");
+}
+#zerowaste .slide2 {
+  background-image: url("./img/history2.jpg");
+}
+#zerowaste .slide3 {
+  background-image: url("./img/history3.jpg");
 }
