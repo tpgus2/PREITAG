@@ -10,23 +10,23 @@ body{
     li{
         list-style: none;
     }
-    ul,li {
+    ul,li,p {
         padding: 0;
         margin: 0;
     }
     .maintxt{
         color: #000;
-        font-family: 'Helvetica73-Extended';
-        font-size: 40px;
+        font-family: 'Helvetica73-Extended',"Noto Sans KR", sans-serif;
+        font-size: 2.5rem;
         font-style: normal;
         font-weight: 700;
-        line-height: normal;
+        line-height: 0.8;
         letter-spacing: -1.6px;
     }
     .subtxt{
         color: #333;
-        font-family: "Noto Sans KR";
-        font-size: 18px;
+        font-family: "Noto Sans KR", sans-serif;
+        font-size: 1.15rem;
         font-style: normal;
         font-weight: 400;
         line-height: normal;
@@ -34,14 +34,14 @@ body{
     
     .subproduct{
         color: #FFF;
-        font-family: 'Helvetica75';
-        font-size: 34px;
+        font-family: 'Helvetica75',"Noto Sans KR", sans-serif;
+        font-size: 2rem;
         font-style: normal;
         font-weight: 700;
         line-height: normal;
         letter-spacing: -1.36px;
         opacity: 1;
-        padding: 0.5rem;
+        padding: 0 0 0.5rem 0.8rem;
         bottom: 0;
         left: 0;  right: 0;
     
@@ -53,7 +53,7 @@ body{
             top: 80%;
         }
     }
-
+    
     .mx20 {
     margin: 0 20px;
     }
@@ -154,7 +154,7 @@ body{
   
       .swiper-slide {
         text-align: center;
-        font-size: 18px;
+        font-size: 1.15rem;
         background: #fff;
         display: flex;
         justify-content: center;
@@ -184,7 +184,6 @@ body{
             font-size: 11rem;
             line-height: 0.75;
             font-weight: 900;
-            
          
          }
       }
@@ -209,7 +208,7 @@ body{
         height: 800px;
         background-color: #000000;
     }
-     .main_a{
+      .main_a{
         color: #000;
         font-weight: 600;
         font-size: 1.5rem;
@@ -218,7 +217,7 @@ body{
         height: 80px;
         background-color: #fff;
         text-align: center;
-        line-height: 3;
+        line-height: 3.3;
     }
 
      
@@ -230,7 +229,7 @@ body{
         .main_subtxt{
             color: #fff;
             font-size: 1.1rem;
-            line-height: 0.7;
+            line-height: 1.5;
             font-weight: 400;
             margin: 100px 0 170px;
         }
@@ -272,7 +271,7 @@ body{
     h2{
         color: #FFF;
         font-family: "Helvetica73-Extended";
-        font-size: 40px;
+        font-size: 2.5rem;
         font-style: normal;
         font-weight: 700;
         line-height: normal;
@@ -281,7 +280,7 @@ body{
     .product_subtxt{
         color: #FFF;
         font-family: "Noto Sans KR";
-        font-size: 18px;
+        font-size: 1.15rem;
         font-style: normal;
         font-weight: 300;
         line-height: normal;
@@ -312,7 +311,18 @@ body{
     .zerotxt{
         width: calc(50% - 249px);
         height: 300px;
-        
+        p{
+            font-size: 1rem;
+        }
+    }
+    .subtitle{
+        color: #000;
+        font-family: "Noto Sans KR", sans-serif;
+        font-size: 28px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+
     }
     .swiper {
       width:  100%;
@@ -321,8 +331,6 @@ body{
 
     .swiper-slide {
       text-align: center;
-      font-size: 18px;
-      background: #fff;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -331,13 +339,35 @@ body{
     .swiperdiv{
         width: calc(50% + 249px);
         height: 100%;
+       
     }
 
-    .swiper-slide img {
-      display: block;
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
+    // .swiper-slide img {
+    //   display: block;
+    //   width: 100%;
+    //   height: 100%;
+    //   object-fit: cover;
+    // }
+
+    .swiper-button-prev:after {
+        content: "◀";
+        font-family: 'swiper-icons';
+        font-size: 2rem;
+        text-transform: none !important;
+        color: #000;
+        position: absolute;
+        top: 250%;
+        right: -595px;
+    }
+    .swiper-button-next:after {
+        content: "▶";
+        font-family: 'swiper-icons';
+        font-size: 2rem;
+        text-transform: none !important;
+        color: #000;
+        position: absolute;
+        top: 250%;
+        left: -39px;
     }
     .backgroundimg{
         background-repeat: no-repeat;
@@ -345,6 +375,9 @@ body{
         width: 380px;
         height: 300px;
         max-width: 100%;
+        color: #fff;
+        font-size: 1.5rem;
+
     }
     .slide1{
         background-image: url('./img/history1.jpg');
@@ -355,5 +388,97 @@ body{
     }
     .slide3{
         background-image: url('./img/history3.jpg');
+    }
+}
+#from_truck{
+
+    .airbag{
+        background-image: url('./img/airbags.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 600px;
+        max-width: 1920px;
+
+    }
+    .air_p{
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+    // p{
+    //     padding: 0;
+    //     line-height: 0.8;
+    // }
+    .morebtn{
+        color: #000;
+        background-color: #fff;
+        opacity: 0.5;
+        width: 450px;
+        height: 80px;
+        &:hover{
+            opacity: 1;
+        }
+        p{
+            opacity: 1;
+            font-weight: 400;
+            font-size: 1.4rem;
+            text-align: center;
+            line-height: 3.5
+        }
+
+
+    }
+}
+#brandnews{
+    
+    .news1{
+        background-image: url('./img/brandnews1.jpg');
+    }
+    .news2{
+        background-image: url('./img/brandnews2.jpg');
+    }
+    .news3{
+        background-image: url('./img/brandnews3.jpg');
+    }
+    .news4{
+        background-image: url('./img/brandnews4.jpg');
+    }
+}
+#onlyF{
+    .onlyF_video{
+        background-color: #000;
+        width: 1824px;
+        height: 550px;
+    }
+    .onlyF_a{
+        display: block;
+        background-color: #000;
+        color: #FFF;
+        width: 594px;
+        height: 80px;
+        font-size: 1.5rem;
+        p{
+            line-height: 3.4;
+        }
+    }
+}
+footer{
+    background-color: #000;
+    width: 100%; 
+    height: 350px;  
+    a{
+        width: 250px;
+        height: auto;
+       
+    }
+    a,p{
+        font-size: 0.8rem;
+        font-weight: 300;
+        padding-left: 2.7rem;
+        color: #fff;
+        font-family: 'Noto Sans KR';
+    }
+    .icons{
+        font-size: 20px;
     }
 }
