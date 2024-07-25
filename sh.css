@@ -33,7 +33,7 @@ body .subtxt {
   line-height: normal;
 }
 body .subproduct {
-  color: #FFF;
+  color: #fff;
   font-family: "Helvetica75", "Noto Sans KR", sans-serif;
   font-size: 2rem;
   font-style: normal;
@@ -136,7 +136,7 @@ body .pt80 {
      object-fit: cover;
 }
 #mainbanner .main1 {
-  background-image: url("/img/mainbanner1.jpg");
+  background-image: url("//tpgus2.github.io/img/mainbanner1.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   width: 1920px;
@@ -151,14 +151,14 @@ body .pt80 {
   font-weight: 900;
 }
 #mainbanner .main2 {
-  background-image: url("/img/mainbanner2.jpg");
+  background-image: url("//tpgus2.github.io/img/mainbanner2.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   width: 1920px;
   height: 800px;
 }
 #mainbanner .main3 {
-  background-image: url("/img/mainbanner3-1.jpg");
+  background-image: url("//tpgus2.github.io/img/mainbanner3-1.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   width: 1920px;
@@ -221,7 +221,7 @@ body .pt80 {
   opacity: 0.75;
 }
 #product h2 {
-  color: #FFF;
+  color: #fff;
   font-family: "Helvetica73-Extended";
   font-size: 2.5rem;
   font-style: normal;
@@ -230,7 +230,7 @@ body .pt80 {
   letter-spacing: -1.76px;
 }
 #product .product_subtxt {
-  color: #FFF;
+  color: #fff;
   font-family: "Noto Sans KR";
   font-size: 1.15rem;
   font-style: normal;
@@ -238,7 +238,7 @@ body .pt80 {
   line-height: normal;
 }
 #product .point_txt {
-  color: #FFF;
+  color: #fff;
   font-family: "Helvetica53-Extended";
   font-size: 150px;
   font-weight: 400;
@@ -378,7 +378,7 @@ body .pt80 {
 #onlyF .onlyF_a {
   display: block;
   background-color: #000;
-  color: #FFF;
+  color: #fff;
   width: 594px;
   height: 80px;
   font-size: 1.5rem;
@@ -392,17 +392,28 @@ footer {
   width: 100%;
   height: 350px;
 }
-footer a {
+footer .ft_a {
   width: 250px;
   height: auto;
 }
-footer a, footer p {
+footer .ft_txt {
   font-size: 0.8rem;
   font-weight: 300;
-  padding-left: 2.7rem;
   color: #fff;
   font-family: "Noto Sans KR";
 }
 footer .icons {
-  font-size: 20px;
+  width: 35px;
+  height: 35px;
+  background-color: #fff;
+  border-radius: 5px;
+  margin-right: 8px;
+}
+footer .icons img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  padding: 4px;
+}
+footer .pl {
+  padding-left: 2.7rem;
 }
