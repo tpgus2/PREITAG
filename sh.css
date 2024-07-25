@@ -357,17 +357,17 @@ body .pt80 {
   line-height: 3.5;
 }
 
-#brandnews .news1 {
-  background-image: url("./img/brandnews1.jpg");
+#brandnews .bntitle {
+  font-size: 1rem;
+  font-family: "Noto Sans KR";
+  font-weight: 500;
+  color: #333;
 }
-#brandnews .news2 {
-  background-image: url("./img/brandnews2.jpg");
-}
-#brandnews .news3 {
-  background-image: url("./img/brandnews3.jpg");
-}
-#brandnews .news4 {
-  background-image: url("./img/brandnews4.jpg");
+#brandnews .bnday {
+  font-size: 0.85rem;
+  font-family: "Noto Sans KR";
+  font-weight: 300;
+  color: #333;
 }
 
 #onlyF .onlyF_video {
@@ -416,4 +416,20 @@ footer .icons img {
 }
 footer .pl {
   padding-left: 2.7rem;
+}
+
+#quick {
+  bottom: 1rem;
+  right: 2rem;
+}
+#quick .quick_bg {
+  display: block;
+  width: 50px;
+  height: 50px;
+  background-color: #000;
+  border-radius: 50%;
+}
+#quick .fonticon {
+  font-size: 1.7rem;
+  padding: 0.5rem;
 }
