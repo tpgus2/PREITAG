@@ -48,6 +48,7 @@ body .subproduct {
 }
 body .subproduct .small {
   top: 90%;
+  color: #fff;
 }
 body .subproduct .tall {
   top: 80%;
@@ -81,6 +82,34 @@ body .pt80 {
 
 #hd {
   background-color: #000;
+}
+#hd.showmenu:before {
+  content: "";
+  background-color: #000;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 350px;
+  z-index: 100;
+  border-top: #fff 1px solid;
+}
+#hd.showmenu .gnb_li {
+  padding: 0 40px;
+}
+#hd.showmenu .gnb_li:nth-child(5) {
+  padding: 0 80px;
+}
+#hd.showmenu .gnb_li .gnb_ul {
+  height: 300px !important;
+  max-height: none !important;
+  transition: 0s !important;
+}
+#hd.showmenu .gnb_li .gnb_ul li {
+  border: 0 !important;
+}
+#hd.showmenu .gnb_li .gnb_ul li:nth-child(1) {
+  border-top: #fff 1px solid !important;
 }
 #hd a {
   color: white;
@@ -254,7 +283,7 @@ body .pt80 {
 #product .point_txt {
   color: #fff;
   font-family: "Helvetica53-Extended";
-  font-size: 150px;
+  font-size: 153px;
   font-weight: 400;
   line-height: normal;
   text-align: end;
@@ -268,6 +297,29 @@ body .pt80 {
 #about_prietag .about_talldiv {
   width: 600px;
   height: 550px;
+}
+#about_prietag .about_txt:hover .up {
+  transition: 0.5s;
+  transform: translateY(-40%);
+}
+#about_prietag .about_txt:hover .article {
+  display: block !important;
+  top: 90%;
+  left: 4%;
+}
+#about_prietag .about_txt:hover .up1 {
+  transition: 0.5s;
+  transform: translateY(-49%);
+}
+#about_prietag .about_txt:hover .article1 {
+  display: block !important;
+  top: 95%;
+  left: 2.7%;
+}
+#about_prietag .about_txt:hover .article2 {
+  display: block !important;
+  top: 95%;
+  left: 5%;
 }
 
 #zerowaste {
@@ -298,6 +350,10 @@ body .pt80 {
   justify-content: center;
   align-items: center;
 }
+#zerowaste .swiper-slide:hover a {
+  color: #000;
+  background-color: #fff;
+}
 #zerowaste .swiperdiv {
   width: calc(50% + 249px);
   height: 100%;
@@ -310,7 +366,7 @@ body .pt80 {
   color: #000;
   position: absolute;
   top: 250%;
-  right: -595px;
+  right: -590px;
 }
 #zerowaste .swiper-button-next:after {
   content: "▶";
@@ -371,6 +427,9 @@ body .pt80 {
   line-height: 3.5;
 }
 
+#brandnews li:hover span {
+  font-weight: 700;
+}
 #brandnews .bntitle {
   font-size: 1rem;
   font-family: "Noto Sans KR";
@@ -389,16 +448,22 @@ body .pt80 {
   width: 1824px;
   height: 550px;
 }
+#onlyF .inner1824 {
+  max-width: 1824px;
+}
 #onlyF .onlyF_a {
   display: block;
-  background-color: #000;
   color: #fff;
-  width: 594px;
   height: 80px;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
+}
+#onlyF .onlyF_a:hover p {
+  transform: scale(1.1);
 }
 #onlyF .onlyF_a p {
-  line-height: 3.4;
+  background-color: #000;
+  line-height: 3.3;
+  transition: transform 0.3s;
 }
 
 footer {

@@ -187,22 +187,25 @@
         <ul class="d-flex justify-content-center mb-0 align-items-center">
             <li class="me-2">
                 <a href="javascript:void(0);">
-                    <i class="bi bi-search text-white">
+                    <i class="bi bi-search text-white fs-5">
                         <span class="visually-hidden">검색</span>
                     </i>
                 </a>
             </li>
             <li class="me-2">
                 <a href="javascript:void(0);">
-                    <i class="bi bi-person-fill text-white">
+                    <i class="bi bi-person-fill text-white fs-4">
                         <span class="visually-hidden">마이페이지</span> 
                     </i>
                 </a>
             </li>
             <li class="me-2">
                 <a href="javascript:void(0);">
-                    <i class="bi bi-list text-white fs-4">
+                    <i class="bi bi-list text-white fs-3 menubtn">
                         <span class="visually-hidden">메뉴</span>
+                    </i>
+                    <i class="bi bi-x-lg d-none xbtn fs-4">
+                        <span class="visually-hidden">닫기</span>
                     </i>
                 </a>
             </li>
@@ -315,29 +318,34 @@
          </div>
         <div class="container d-flex justify-content-center align-items-stretch">
             <div class="about_smdiv overflow-hidden">
-                <div class="">
+                <div class="about_txt">
                     <a href="javascript:void(0);" class="d-block position-relative">
                         <img src="./img/popup.jpg" alt="팝업스토어" class="d-block h-100">
-                        <span class="position-absolute subproduct small">POP-UP</span>
+                        <span class="position-absolute subproduct small up">POP-UP</span>
+                        <span class="d-none article position-absolute small text-white">진행되고 있는 팝업스토어를 확인해보세요</span>
                     </a>
+             
                 </div>
-                <div class="mt20">
+                <div class="mt20 about_txt">
                     <a href="javascript:void(0);" class="d-block position-relative">
                         <img src="./img/factory.jpg" alt="공장" class="d-block h-100">
-                        <span class="position-absolute subproduct small">FACTORY</span>
+                        <span class="position-absolute subproduct small up">FACTORY</span>
+                        <span class="d-none article position-absolute small text-white">프라이탁의 생산 과정을 체험해보세요</span>
                     </a>
                 </div>
             </div>
-            <div class="mx20 about_talldiv">
-                <a href="javascript:void(0);" class="d-block position-relative" class="d-block h-100">
-                    <img src="./img/stores.jpg" alt="매장">
-                    <span class="position-absolute subproduct tall">STORES</span>
-                </a>
+            <div class="mx20 about_talldiv about_txt">
+                <a href="javascript:void(0);" class="d-block position-relative" >
+                    <img src="./img/stores.jpg" alt="매장" class="d-block h-100">
+                    <span class="position-absolute subproduct tall up1">STORES</span>
+                    <span class="d-none article1 position-absolute small text-white">전 세계의 위치한 프라이탁 매장을 찾아보세요</span>
+                </a> 
             </div>
-            <div class="about_smdiv">
+            <div class="about_smdiv about_txt">
                 <a href="javascript:void(0);" class="d-block position-relative overflow-hidden">
                     <img src="./img/cityguidelines.jpg" alt="도시가이드라인" class="d-block h-100">
-                    <span class="position-absolute subproduct tall">CITY GUIDE LINES</span>
+                    <span class="position-absolute subproduct tall up1">CITY GUIDE LINES</span>
+                    <span class="d-none article2 position-absolute small text-white">도시가이드라인을 확인해보세요</span>
                 </a>
             </div>
     </div>
@@ -410,8 +418,8 @@
             <h2 class="maintxt">PREITAG NEWS</h2>
             <span class="subtxt">프라이탁은 지속가능한 미래를 위해 실천합니다.</span>
          </div>
-         <div class="row justify-content-center align-items-stretch">
-            <div class="col-3">
+        <ul class="row justify-content-center align-items-stretch">
+            <li class="col-3" data-aos="fade-up" data-aos-delay="0" data-aos-duration="1200">
                 <div class="">
                     <a href="javascript:void(0);"> 
                         <img src="./img/brandnews1.jpg" alt="블랙프라이데이 캠페인" class="h-100 img-fluid">
@@ -423,8 +431,8 @@
                         </a>
                     </div>
                 </div>
-            </div>
-            <div class="col-3">
+            </li>
+            <li class="col-3" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1200">
                 <div class="">
                     <a href="javascript:void(0);">
                         <img src="./img/brandnews2.jpg" alt="전시회" class="h-100 img-fluid">
@@ -436,8 +444,8 @@
                         </a>
                     </div>
                 </div>
-            </div>
-            <div class="col-3">
+            </li>
+            <li class="col-3" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1200">
                 <div class="">
                     <a href="javascript:void(0);">
                         <img src="./img/brandnews3.jpg" alt="팝업스토어" class="h-100 img-fluid">
@@ -449,8 +457,8 @@
                         </a>
                     </div>
                 </div>
-            </div>
-            <div class="col-3">
+            </li>
+            <li class="col-3" data-aos="fade-up" data-aos-delay="600" data-aos-duration="1200">
                 <div class="">
                     <a href="javascript:void(0);">
                         <img src="./img/brandnews4.jpg" alt="자전거 대여 캠페인" class=" h-100 img-fluid">
@@ -462,8 +470,8 @@
                         </a>
                     </div>
                 </div>
-            </div>
-         </div>
+            </li>
+        </ul>
     </section>
     <section id="onlyF" class="mt200">
         <div class="mb-3 container">
@@ -473,23 +481,25 @@
          <div class="d-flex justify-content-center">
             <div class="onlyF_video d-flex align-items-center justify-content-center" >
                 <iframe width="1320" height="550" 
-                src="https://www.youtube.com/embed/ckXZ4t0i3iU?si=GDR0aHtJSORhgpf8" 
+                src="https://www.youtube.com/embed/ckXZ4t0i3iU?si=GDR0aHtJSORhgpf8?" 
                 title="YouTube video player" frameborder="0" 
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen ></iframe>
             </div>
            
          </div>
-         <div class="d-flex align-items-center justify-content-center text-center mt20">
-            <a href="javascript:void(0);" class="onlyF_a">
+         <div>
+         <div class="d-flex align-items-center justify-content-between text-center mt20 mx-auto inner1824" >
+            <a href="javascript:void(0);" class="onlyF_a col">
                 <p>S.W.A.P</p>
             </a>
-            <a href="javascript:void(0);" class="onlyF_a mx-4">
+            <a href="javascript:void(0);" class="onlyF_a mx-4 col">
                 <p>TAKE BACK</p>
             </a>
-            <a href="javascript:void(0);" class="onlyF_a">
+            <a href="javascript:void(0);" class="onlyF_a col">
                 <p>REPAIR</p>
             </a>
+         </div>
          </div>
     </section>
     <aside id="quick" class="position-fixed all">
@@ -555,12 +565,11 @@
       <!-- Swiper JS -->
       <script src="https://cdn.jsdelivr.net/npm/swiper@11.1.5/swiper-bundle.min.js"></script>
       
-      <!-- aos -->\
+      <!-- aos -->
       <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    
-      <!-- Initialize Swiper -->
 
       <script>
+        // swiper 스크립트
         let mySwiper = new Swiper(".mySwiper", {
             effect: 'fade',
             // fadeEffect: { crossFade: true },
@@ -578,6 +587,7 @@
 
         let  zeroSwiper = new Swiper('.zeroSwiper', {
             slidesPerView: 'auto',
+            loop: true,
             spaceBetween: 20,
             clickable: true,
             navigation: {
@@ -603,13 +613,27 @@
         clickable: true,
         });
       
+        // 자바스크립트
+        
         const click = document.querySelector('.click');
         const clickme = document.querySelector('.click_me');
+        const allbtn = document.querySelector('.menubtn')
+        const closebtn = document.querySelector('.xbtn')
 
         click.addEventListener('click',function(){
             clickme.classList.toggle('d-none');
-            clickme.classList.toggle('d-block');
-           
+        });
+
+        allbtn.addEventListener('click', function() {
+            document.getElementById('hd').classList.toggle('showmenu');
+            allbtn.classList.toggle('d-none');
+            closebtn.classList.remove('d-none');
+        });
+
+        closebtn.addEventListener('click', function() {
+            document.getElementById('hd').classList.toggle('showmenu');
+            allbtn.classList.toggle('d-none');
+            closebtn.classList.add('d-none');
         });
         
         AOS.init();
