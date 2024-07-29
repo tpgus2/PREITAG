@@ -45,13 +45,37 @@
      <link rel="stylesheet" href="./sh.min.css">
 </head>
 <body>
-       <header id="hd" class="d-flex justify-content-between px-4 align-items-center position-relative">
+    <div id="eventbanner" class="container">
+            <div class="swiper eventSwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <span>회원 가입시 5% 할인 쿠폰 증정 !</span>
+                    </div>
+                    <div class="swiper-slide ">
+                        <span>회원 가입시 5% 할인 쿠폰 증정 !</span>
+                    </div>
+                    <div class="swiper-slide">
+                        <span>회원 가입시 5% 할인 쿠폰 증정 !</span>
+                    </div>
+                    <div class="swiper-slide ">
+                        <span>회원 가입시 5% 할인 쿠폰 증정 !</span>
+                    </div>
+                    <div class="swiper-slide">
+                        <span>회원 가입시 5% 할인 쿠폰 증정 !</span>
+                    </div>
+                    <div class="swiper-slide">
+                        <span>회원 가입시 5% 할인 쿠폰 증정 !</span>
+                    </div>        
+                </div>
+            </div>
+    </div>
+    <header id="hd" class="d-flex justify-content-between px-4 align-items-center position-relative">
         <h1 class="mb-0 h-100">
             <a href="#" class="d-block">
                 <img src="./img/logo.png" alt="" class="h-100 w-100 img-fluid">
             </a>
         </h1>
-        <ul class="gnb d-flex jusutify-content-center mb-0 align-items-center">
+        <ul class="gnb d-flex justify-content-center mb-0 align-items-center">
             <li class="gnb_li me-5 position-relative py-4">
                 <a href="#" class="gnb_a">BAGS</a>
                 <ul class="gnb_ul position-absolute">
@@ -159,19 +183,27 @@
                 <a href="#" class="gnb_a">STORES</a>
             </li>
         </ul>
-        <ul class="d-flex jusutify-content-center mb-0 align-items-center">
+        <ul class="d-flex justify-content-center mb-0 align-items-center">
             <li class="me-2">
-                <i class="bi bi-search text-white">
-                    <span class="visually-hidden">검색</span>
-                </i>
+                <a href="javascript:void(0);">
+                    <i class="bi bi-search text-white">
+                        <span class="visually-hidden">검색</span>
+                    </i>
+                </a>
             </li>
-            <li class="me-2"><i class="bi bi-person-fill text-white">
-                <span class="visually-hidden">사람</span>
-            </i>
+            <li class="me-2">
+                <a href="javascript:void(0);">
+                    <i class="bi bi-person-fill text-white">
+                        <span class="visually-hidden">마이페이지</span> 
+                    </i>
+                </a>
             </li>
-            <li class="me-2"><i class="bi bi-list text-white fs-4">
-                <span class="visually-hidden">메뉴</span>
-            </i>
+            <li class="me-2">
+                <a href="javascript:void(0);">
+                    <i class="bi bi-list text-white fs-4">
+                        <span class="visually-hidden">메뉴</span>
+                    </i>
+                </a>
             </li>
         </ul>
     </header>
@@ -215,7 +247,7 @@
                                 <p>F-CUT을 팝업스토어 현장에서 </p> 
                                 <p>만날 수 있는 기회를 놓치지 마세요</p>
                             </div>
-                            <a href="#" class="main_a">멤버십 가입하기</a>
+                            <a href="#" class="main_a">사전예약하기</a>
                         </div>
                     </div>
                 </div>
@@ -457,20 +489,20 @@
             </a>
          </div>
     </section>
-    <aside id="quick" class="position-fixed">
+    <aside id="quick" class="position-fixed all">
         <div class="mt-2">
-            <span class="quick_bg text-white fonticon">F</span>
-            <span class="visually-hidden">퀵 메뉴</span>
+            <p class="quick_bg text-white fonticon text-center p-1">F</p>
+            <p class="visually-hidden">퀵 메뉴</p>
         </div>
         <ul class="text-white">
             <li>
-                <a href="" class="quick_bg mt-2">
+                <a href="" class="quick_bg mt-2 all">
                     <i class="bi bi-person-fill text-white fonticon"></i>
                     <span class="visually-hidden">마이페이지</span>
                 </a>
             </li>
             <li>
-                <a href="" class="quick_bg mt-2">
+                <a href="" class="quick_bg mt-2 all">
                     <i class="bi bi-bag-heart-fill text-white fonticon">
                         <span class="visually-hidden">장바구니</span>
                     </i>
@@ -478,7 +510,7 @@
             </li>
         </ul>
         <div class="">
-            <a href="#" class="quick_bg mt-2">
+            <a href="#" class="quick_bg mt-2 all">
                 <i class="bi bi-arrow-up text-white fonticon">
                     <span class="visually-hidden">탑 버튼</span>
                 </i>
@@ -521,6 +553,7 @@
       <script src="https://cdn.jsdelivr.net/npm/swiper@11.1.5/swiper-bundle.min.js"></script>
     
       <!-- Initialize Swiper -->
+
       <script>
         let mySwiper = new Swiper(".mySwiper", {
             effect: 'fade',
@@ -549,8 +582,21 @@
             delay: 2000, 
             disableOnInteraction: false
         }
-            
-    });
+        });
+
+        let eventswiper = new Swiper('#eventbanner .swiper', {
+        loop: true,
+        autoplay: {
+            delay: 0,
+            disableOnInteraction: false,
+        },
+        speed: 15000,
+        slidesPerView: "auto",
+        spaceBetween: 100,
+        allowTouchMove: false,
+        clickable: true,
+        });
+
      </script>
 </body>
 </html>

@@ -65,8 +65,22 @@ body .pt80 {
   padding-top: 80px;
 }
 
+#eventbanner {
+  height: 35px;
+}
+#eventbanner .swiper-slide {
+  width: 33.333%;
+  max-width: 400px;
+}
+#eventbanner .swiper-slide span {
+  line-height: 2;
+  color: #000;
+  font-weight: 500;
+  font-family: "Noto Sans KR", sans-serif;
+}
+
 #hd {
-  background-color: #000000;
+  background-color: #000;
 }
 #hd a {
   color: white;
@@ -421,15 +435,22 @@ footer .pl {
 #quick {
   bottom: 1rem;
   right: 2rem;
+  z-index: 10000;
 }
 #quick .quick_bg {
   display: block;
   width: 50px;
   height: 50px;
   background-color: #000;
-  border-radius: 50%;
+  border-radius: 10px;
+  border: 2px white solid;
 }
 #quick .fonticon {
   font-size: 1.7rem;
-  padding: 0.5rem;
+}
+#quick .all {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
 }
