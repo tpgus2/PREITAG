@@ -36,6 +36,7 @@
      
     <!-- 플러그인 -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     
    
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -389,17 +390,19 @@
             <span class="subtxt">버려지는 재료들이 하나의 제품으로 완성되기까지</span>
          </div>
          <div class="airbag d-flex flex-column justify-content-center align-items-center">
-            <div class="text-white text-center">
-                <p class="air_p">AIRBAGS</p>
-                <div class="my-5 py-3">
-                    <p>버려지는 것은 트럭 방수포뿐만이 아닙니다. </p>
-                    <p>사용되지 않고 폐기된 에어백으로 만들어진 가방은</p>
-                    <p>견고하고 가벼운 가방으로 일상의 동반자가 되어줍니다.</p>
+            <div  data-aos="fade-up" data-aos-duration="1500">
+                <div class="text-white text-center">
+                    <p class="air_p">AIRBAGS</p>
+                    <div class="my-5 py-3">
+                        <p>버려지는 것은 트럭 방수포뿐만이 아닙니다. </p>
+                        <p>사용되지 않고 폐기된 에어백으로 만들어진 가방은</p>
+                        <p>견고하고 가벼운 가방으로 일상의 동반자가 되어줍니다.</p>
+                    </div>
                 </div>
+                <a href="#" class="morebtn d-block" >
+                    <p>MORE</p>
+                </a>
             </div>
-            <a href="#" class="morebtn">
-                <p>MORE</p>
-            </a>
          </div>
     </section>
     <section id="brandnews" class="mt200 container">
@@ -490,11 +493,11 @@
          </div>
     </section>
     <aside id="quick" class="position-fixed all">
-        <div class="mt-2">
+        <div class="mt-2 click">
             <p class="quick_bg text-white fonticon text-center p-1">F</p>
-            <p class="visually-hidden">퀵 메뉴</p>
+            <p class="visually-hidden ">퀵 메뉴</p>
         </div>
-        <ul class="text-white">
+        <ul class="text-white d-none click_me">
             <li>
                 <a href="" class="quick_bg mt-2 all">
                     <i class="bi bi-person-fill text-white fonticon"></i>
@@ -551,6 +554,9 @@
 
       <!-- Swiper JS -->
       <script src="https://cdn.jsdelivr.net/npm/swiper@11.1.5/swiper-bundle.min.js"></script>
+      
+      <!-- aos -->\
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     
       <!-- Initialize Swiper -->
 
@@ -596,6 +602,17 @@
         allowTouchMove: false,
         clickable: true,
         });
+      
+        const click = document.querySelector('.click');
+        const clickme = document.querySelector('.click_me');
+
+        click.addEventListener('click',function(){
+            clickme.classList.toggle('d-none');
+            clickme.classList.toggle('d-block');
+           
+        });
+        
+        AOS.init();
 
      </script>
 </body>
