@@ -235,7 +235,7 @@ body{
             left: -45%;
             color: #fff;
             font-size: 11rem;
-            line-height: 0.75;
+            line-height: 0.8;
             font-weight: 900;
          
          }
@@ -392,7 +392,7 @@ body{
         width: calc(50% - 249px);
         height: 300px;
         p{
-            font-size: 1rem;
+            font-size: 0.9rem;
         }
     }
     .subtitle{
@@ -505,7 +505,10 @@ body{
     }
 }
 #brandnews{
-    
+    .moretxt{
+        font-weight: 500;
+        font-size: 1.15rem;
+    }
     li:hover span{
         font-weight: 700 ;
     }

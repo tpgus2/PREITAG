@@ -190,7 +190,7 @@ body .pt80 {
   left: -45%;
   color: #fff;
   font-size: 11rem;
-  line-height: 0.75;
+  line-height: 0.8;
   font-weight: 900;
 }
 #mainbanner .main2 {
@@ -330,7 +330,7 @@ body .pt80 {
   height: 300px;
 }
 #zerowaste .zerotxt p {
-  font-size: 1rem;
+  font-size: 0.9rem;
 }
 #zerowaste .subtitle {
   color: #000;
@@ -427,6 +427,10 @@ body .pt80 {
   line-height: 3.5;
 }
 
+#brandnews .moretxt {
+  font-weight: 500;
+  font-size: 1.15rem;
+}
 #brandnews li:hover span {
   font-weight: 700;
 }
