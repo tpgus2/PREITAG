@@ -76,10 +76,10 @@
                 <img src="./img/logo.png" alt="" class="h-100 w-100 img-fluid">
             </a>
         </h1>
-        <ul class="gnb d-flex justify-content-center mb-0 align-items-center">
-            <li class="gnb_li me-5 position-relative py-4">
-                <a href="#" class="gnb_a">BAGS</a>
-                <ul class="gnb_ul position-absolute">
+        <ul class="gnb justify-content-center mb-0">
+            <li class="gnb_li me-5 position-relative">
+                <a href="#none" class="gnb_a">BAGS</a>
+                <ul class="gnb_ul">
                     <li class="">
                         <a href="#">ALL BAGS</a>
                     </li>
@@ -97,9 +97,9 @@
                     </li>
                 </ul>
             </li>
-            <li class="gnb_li me-5 position-relative py-4">
+            <li class="gnb_li me-5 position-relative">
                 <a href="#" class="gnb_a">ACCESSORIES</a>
-                <ul class="gnb_ul position-absolute">
+                <ul class="gnb_ul">
                     <li class="">
                         <a href="#">ALL ACCESSORIES</a>
                     </li>
@@ -117,17 +117,17 @@
                     </li>
                 </ul>
             </li>
-            <li class="gnb_li me-5 position-relative py-4">
+            <li class="gnb_li me-5 position-relative">
                 <a href="#" class="gnb_a">APPAREL</a>
-                <ul class="gnb_ul position-absolute">
+                <ul class="gnb_ul">
                     <li class="">
                         <a href="#">LAST PIECES</a>
                     </li>
                 </ul>
             </li>
-            <li class="gnb_li me-5 position-relative py-4">
+            <li class="gnb_li me-5 position-relative">
                 <a href="#" class="gnb_a">ABOUT US</a>
-                <ul class="gnb_ul position-absolute">
+                <ul class="gnb_ul">
                     <li class="">
                         <a href="#">30YEARS OF ORIGINALS</a>
                     </li>
@@ -154,9 +154,9 @@
                     </li>
                 </ul>
             </li>
-            <li class="gnb_li me-5 position-relative py-4">
+            <li class="gnb_li me-5 position-relative">
                 <a href="#" class="gnb_a">SERVICES</a>
-                <ul class="gnb_ul position-absolute">
+                <ul class="gnb_ul">
                     <li class="">
                         <a href="#">REPAIR BAGS</a>
                     </li>
@@ -180,31 +180,41 @@
                     </li>
                 </ul>
             </li>
-            <li class="gnb_li me-5 position-relative py-4">
+            <li class="gnb_li me-5 position-relative">
                 <a href="#" class="gnb_a">STORES</a>
             </li>
         </ul>
         <ul class="d-flex justify-content-center mb-0 align-items-center">
+            <li>
+                 <form class="form-show search-form border me-3 position-absolute">
+                    <a class="a-search" href="#">
+                        <i class="bi bi-search">
+                            <span class="visually-hidden">검색</span>
+                        </i>
+                    </a>
+                    <input type="text" class="form-control search-pc" placeholder="검색어 입력">
+                </form>
+            </li>
             <li class="me-2">
                 <a href="javascript:void(0);">
-                    <i class="bi bi-search text-white fs-5">
+                    <i class="bi bi-search text-white icon">
                         <span class="visually-hidden">검색</span>
                     </i>
                 </a>
             </li>
             <li class="me-2">
                 <a href="javascript:void(0);">
-                    <i class="bi bi-person-fill text-white fs-4">
+                    <i class="bi bi-person-fill text-white fs4 icon">
                         <span class="visually-hidden">마이페이지</span> 
                     </i>
                 </a>
             </li>
             <li class="me-2">
                 <a href="javascript:void(0);">
-                    <i class="bi bi-list text-white fs-3 menubtn">
+                    <i class="bi bi-list text-white fs5 menubtn icon">
                         <span class="visually-hidden">메뉴</span>
                     </i>
-                    <i class="bi bi-x-lg d-none xbtn fs-4">
+                    <i class="bi bi-x-lg d-none xbtn fs4 icon">
                         <span class="visually-hidden">닫기</span>
                     </i>
                 </a>
@@ -262,7 +272,7 @@
     </section>
     
 
-      <section id="product">
+      <section id="product" class="overflow-hidden">
         <div class="container pt80 mb-3">
             <h2>PRODUCT</h2>
             <span class="product_subtxt">낡아 버려질 것들이 세상에 단 하나뿐인 실용적이고 도시적인 프라이탁 제품으로 완성됩니다.</span>
@@ -479,7 +489,7 @@
             </li>
         </ul>
     </section>
-    <section id="onlyF" class="mt200">
+    <section id="onlyF" class="mt200 overflow-hidden">
         <div class="mb-3 container">
             <h2 class="maintxt">ONLY PREITAG</h2>
             <span class="subtxt">FREITAG 가방을 사용하는 동안 다양한 서비스를 통해 제품의 수명을 연장할 수 있습니다.</span>
@@ -623,8 +633,9 @@
         
         const click = document.querySelector('.click');
         const clickme = document.querySelector('.click_me');
-        const allbtn = document.querySelector('.menubtn')
-        const closebtn = document.querySelector('.xbtn')
+        const allbtn = document.querySelector('.menubtn');
+        const closebtn = document.querySelector('.xbtn');
+        const serchicion = document.querySelector('.bi-search');
 
         click.addEventListener('click',function(){
             clickme.classList.toggle('d-none');
@@ -634,15 +645,29 @@
             document.getElementById('hd').classList.toggle('showmenu');
             allbtn.classList.toggle('d-none');
             closebtn.classList.remove('d-none');
+            serchicion.classList.add('d-none')
         });
 
         closebtn.addEventListener('click', function() {
             document.getElementById('hd').classList.toggle('showmenu');
             allbtn.classList.toggle('d-none');
             closebtn.classList.add('d-none');
+            serchicion.classList.remove('d-none')
         });
         
         AOS.init();
+
+        const gnblis = document.querySelectorAll('.gnb_li');
+        gnblis.forEach(li => {
+            li.addEventListener('click', function() {
+                // 모든 메뉴에서 'action' 클래스를 제거합니다.
+                gnblis.forEach(el => el.classList.remove('action'));
+
+                // 클릭된 메뉴에 'action' 클래스를 추가합니다.
+                li.classList.add('action');
+            });
+        });
+
 
      </script>
 </body>
