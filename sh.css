@@ -112,7 +112,7 @@ body .fs5 {
 }
 @media (min-width: 1300px) {
   #hd.showmenu .gnb_li .gnb_ul {
-    height: 300px !important;
+    height: 300px;
     max-height: none !important;
     transition: 0s !important;
   }
@@ -122,6 +122,16 @@ body .fs5 {
 }
 #hd.showmenu .gnb_li .gnb_ul li:nth-child(1) {
   border-top: #fff 1px solid !important;
+}
+#hd.showmenu .formxbtn {
+  display: none;
+}
+#hd.showmenu .formnavi {
+  display: block !important;
+  position: absolute;
+  top: 125%;
+  z-index: 1200;
+  right: 1%;
 }
 #hd a {
   color: white;
@@ -173,6 +183,13 @@ body .fs5 {
 #hd .gnb .gnb_li .gnb_ul li:last-child {
   border-bottom: 1px solid white;
   padding-bottom: 20px;
+}
+#hd .forminput {
+  border-radius: inherit;
+}
+#hd .forminput:focus {
+  border-color: #000;
+  outline: none;
 }
 
 #mainbanner {
@@ -543,10 +560,28 @@ footer .pl {
   justify-content: center;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 1550px) {
+  #hd.showmenu .icon {
+    font-size: 1.2rem;
+  }
+  #hd.showmenu .gnb_li {
+    padding: 1.5rem 30px;
+    font-size: 0.9rem;
+  }
+}
+@media (max-width: 1401px) {
+  #hd .gnb {
+    display: none;
+  }
   #hd.showmenu .gnb {
-    width: 100vw !important;
-    border-top: 1px #fff solid;
+    display: flex;
+  }
+  #hd.showmenu .icon {
+    font-size: 1rem;
+  }
+  #hd.showmenu .gnb_li {
+    padding: 1.5rem 30px;
+    font-size: 0.8rem;
   }
 }
 @media (max-width: 1299px) {
@@ -586,37 +621,38 @@ footer .pl {
   #hd.showmenu .gnb .gnb_ul {
     text-align: unset;
   }
+  #hd.showmenu .formnavi {
+    top: 135%;
+    left: 32%;
+  }
+  #hd.showmenu .formnavi input {
+    width: 300px;
+  }
   #hd .gnb .gnb_ul {
     max-height: 0px;
-  }
-}
-@media (max-width: 1401px) {
-  #hd .gnb {
-    display: none;
-  }
-  #hd.showmenu .gnb {
-    display: flex;
-  }
-  #hd.showmenu .icon {
-    font-size: 1rem;
-  }
-  #hd.showmenu .gnb_li {
-    padding: 1.5rem 30px;
-    font-size: 0.8rem;
-  }
-}
-@media (max-width: 1550px) {
-  #hd.showmenu .icon {
-    font-size: 1.2rem;
-  }
-  #hd.showmenu .gnb_li {
-    padding: 1.5rem 30px;
-    font-size: 0.9rem;
   }
 }
 @media (min-width: 1300px) and (max-width: 1400px) {
   #hd.showmenu .gnb_li {
     padding: 1.5rem 22px;
     font-size: 0.85rem;
+  }
+}
+@media (max-width: 767px) {
+  body .fs4 {
+    font-size: 1.2rem;
+  }
+  #hd.showmenu .gnb {
+    width: 100vw !important;
+    border-top: 1px #fff solid;
+  }
+  #hd.showmenu .formnavi {
+    left: 3%;
+  }
+  #hd.showmenu .formnavi input {
+    width: 200px;
+  }
+  .serch {
+    display: none;
   }
 }

@@ -126,7 +126,7 @@ body{
             @media (min-width:1300px) {
                 .gnb_ul{
 
-                    height: 300px !important; 
+                    height: 300px; 
                     max-height: none !important;  
                     transition: 0s !important;
 
@@ -148,7 +148,16 @@ body{
                     
                 }
             }
-
+        }
+        .formxbtn{
+            display: none;
+        }
+        .formnavi{
+            display: block !important;
+            position: absolute;
+            top: 125%;
+            z-index: 1200;
+            right: 1%;
         }
         
     }
@@ -217,6 +226,16 @@ body{
             }
         }
 }
+
+    .forminput{
+    
+        border-radius:inherit;
+
+    &:focus{
+        border-color: #000;
+        outline: none;
+    }
+    }
 }
 
 #mainbanner{
@@ -637,19 +656,39 @@ footer{
 
 
   
-@media (max-width: 767px) {
-    #hd.showmenu {
-    
-        .gnb{
-            width:100vw !important;
-            border-top: 1px #fff solid;
+@media (max-width: 1550px) {
+    #hd.showmenu{
+
+        .icon{
+           font-size: 1.2rem;
         }
-  
-            
-    
+        .gnb_li {
+        padding: 1.5rem 30px;
+        font-size: 0.9rem;
+        
     }
-}
+    } 
+} 
   
+@media(max-width:1401px){
+    #hd .gnb{
+        display: none;
+    }
+    #hd.showmenu{
+        .gnb{
+            display: flex;
+        }
+        .icon{
+            font-size: 1rem;
+        }
+        .gnb_li {
+            padding: 1.5rem 30px;
+            font-size: 0.8rem;
+        }
+    } 
+}
+
+
 @media  (max-width: 1299px) { //1300px 이하
     #hd.showmenu {
         &:before{
@@ -695,6 +734,14 @@ footer{
                text-align: unset;
             }
         }
+        .formnavi{
+            top: 135%;
+            left: 32%;
+
+            input{
+                width: 300px;
+            }
+        }
     }
     #hd{
         .gnb{
@@ -705,38 +752,7 @@ footer{
     }
 }
 
-@media(max-width:1401px){
-    #hd .gnb{
-        display: none;
-    }
-    #hd.showmenu{
-        .gnb{
-            display: flex;
-        }
-        .icon{
-            font-size: 1rem;
-        }
-        .gnb_li {
-            padding: 1.5rem 30px;
-            font-size: 0.8rem;
-        }
-    } 
-}
-
-@media (max-width: 1550px) {
-    #hd.showmenu{
-
-        .icon{
-           font-size: 1.2rem;
-        }
-        .gnb_li {
-        padding: 1.5rem 30px;
-        font-size: 0.9rem;
-        
-    }
-    } 
-}  
-  
+ 
 @media (min-width: 1300px) and (max-width: 1400px) {
     #hd.showmenu {
 
@@ -745,4 +761,31 @@ footer{
             font-size: .85rem;
         } 
     }
+}
+
+@media (max-width: 767px) {
+    body{
+        .fs4 {
+            font-size: 1.2rem;
+        }
+    }
+    #hd.showmenu {
+    
+        .gnb{
+            width:100vw !important;
+            border-top: 1px #fff solid;
+        }
+        
+        .formnavi{
+            left: 3%;
+            
+            input{
+                width: 200px;
+            }
+        }
+    }
+    .serch{
+        display: none;
+    }
+    
 }

@@ -46,7 +46,7 @@
      <link rel="stylesheet" href="./sh.min.css">
 </head>
 <body>
-    <div id="eventbanner" class="container">
+    <div id="eventbanner" class="container overflow-hidden">
             <div class="swiper eventSwiper">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
@@ -72,7 +72,7 @@
     </div>
     <header id="hd" class="d-flex justify-content-between px-4 align-items-center position-relative">
         <h1 class="mb-0 h-100">
-            <a href="#" class="d-block">
+            <a href="#none" class="d-block">
                 <img src="./img/logo.png" alt="" class="h-100 w-100 img-fluid">
             </a>
         </h1>
@@ -81,19 +81,19 @@
                 <a href="#none" class="gnb_a">BAGS</a>
                 <ul class="gnb_ul">
                     <li class="">
-                        <a href="#">ALL BAGS</a>
+                        <a href="#none">ALL BAGS</a>
                     </li>
                     <li class="">
-                        <a href="#">BACKPAKS</a>
+                        <a href="#none">BACKPAKS</a>
                     </li>
                     <li class="">
-                        <a href="#">MESSENGER</a>
+                        <a href="#none">MESSENGER</a>
                     </li>
                     <li class="">
-                        <a href="#">OTHER</a>
+                        <a href="#none">OTHER</a>
                     </li>
                     <li class="">
-                        <a href="#">DESIGN YOUR OWN BAG</a>
+                        <a href="#none">DESIGN YOUR OWN BAG</a>
                     </li>
                 </ul>
             </li>
@@ -101,19 +101,19 @@
                 <a href="#" class="gnb_a">ACCESSORIES</a>
                 <ul class="gnb_ul">
                     <li class="">
-                        <a href="#">ALL ACCESSORIES</a>
+                        <a href="#none">ALL ACCESSORIES</a>
                     </li>
                     <li class="">
-                        <a href="#">PHONE CASES</a>
+                        <a href="#none">PHONE CASES</a>
                     </li>
                     <li class="">
-                        <a href="#">WALLETS</a>
+                        <a href="#none">WALLETS</a>
                     </li>
                     <li class="">
-                        <a href="#">POUCHES</a>
+                        <a href="#none">POUCHES</a>
                     </li>
                     <li class="">
-                        <a href="#">OTHER</a>
+                        <a href="#none">OTHER</a>
                     </li>
                 </ul>
             </li>
@@ -121,7 +121,7 @@
                 <a href="#" class="gnb_a">APPAREL</a>
                 <ul class="gnb_ul">
                     <li class="">
-                        <a href="#">LAST PIECES</a>
+                        <a href="#none">LAST PIECES</a>
                     </li>
                 </ul>
             </li>
@@ -129,28 +129,28 @@
                 <a href="#" class="gnb_a">ABOUT US</a>
                 <ul class="gnb_ul">
                     <li class="">
-                        <a href="#">30YEARS OF ORIGINALS</a>
+                        <a href="#none">30YEARS OF ORIGINALS</a>
                     </li>
                     <li class="">
-                        <a href="#">PRODUCTION</a>
+                        <a href="#none">PRODUCTION</a>
                     </li>
                     <li class="">
-                        <a href="#">HISTORY</a>
+                        <a href="#none">HISTORY</a>
                     </li>
                     <li class="">
-                        <a href="#">HOLACRACY</a>
+                        <a href="#none">HOLACRACY</a>
                     </li>
                     <li class="">
-                        <a href="#">FREITAG NEWSLETTER</a>
+                        <a href="#none">FREITAG NEWSLETTER</a>
                     </li>
                     <li class="">
-                        <a href="#">FAQ & SUPPORT</a>
+                        <a href="#none">FAQ & SUPPORT</a>
                     </li>
                     <li class="">
-                        <a href="#">CONTACT</a>
+                        <a href="#none">CONTACT</a>
                     </li>
                     <li class="">
-                        <a href="#">MEDIA</a>
+                        <a href="#none">MEDIA</a>
                     </li>
                 </ul>
             </li>
@@ -158,25 +158,25 @@
                 <a href="#" class="gnb_a">SERVICES</a>
                 <ul class="gnb_ul">
                     <li class="">
-                        <a href="#">REPAIR BAGS</a>
+                        <a href="#none">REPAIR BAGS</a>
                     </li>
                     <li class="">
-                        <a href="#">EXCHANGE BAGS (S.W.A.P)</a>
+                        <a href="#none">EXCHANGE BAGS (S.W.A.P)</a>
                     </li>
                     <li class="">
-                        <a href="#">TAKE-BACK</a>
+                        <a href="#none">TAKE-BACK</a>
                     </li>
                     <li class="">
-                        <a href="#">VISIT FACTORY</a>
+                        <a href="#none">VISIT FACTORY</a>
                     </li>
                     <li class="">
-                        <a href="#">BAG RENT A CARGO BIKE</a>
+                        <a href="#none">BAG RENT A CARGO BIKE</a>
                     </li>
                     <li class="">
-                        <a href="#">EXPLORE CITY GULDE LINES</a>
+                        <a href="#none">EXPLORE CITY GULDE LINES</a>
                     </li>
                     <li class="">
-                        <a href="#">F-EDERATION</a>
+                        <a href="#none">F-EDERATION</a>
                     </li>
                 </ul>
             </li>
@@ -185,33 +185,36 @@
             </li>
         </ul>
         <ul class="d-flex justify-content-center mb-0 align-items-center">
-            <li>
-                 <form class="form-show search-form border me-3 position-absolute">
-                    <a class="a-search" href="#">
+            <li class="me-2 d-flex">
+                 <form class="me-3 d-flex align-items-center d-none formnavi">
+                    <a class="mx-2" href="#none">
                         <i class="bi bi-search">
                             <span class="visually-hidden">검색</span>
                         </i>
                     </a>
-                    <input type="text" class="form-control search-pc" placeholder="검색어 입력">
-                </form>
-            </li>
-            <li class="me-2">
-                <a href="javascript:void(0);">
-                    <i class="bi bi-search text-white icon">
+                    <input type="text" class="forminput" placeholder="검색어 입력">
+                </form> 
+                <a href="#none">
+                    <i class="bi bi-search text-white icon serch">
                         <span class="visually-hidden">검색</span>
+                    </i>
+                </a>
+                <a href="#none" class="d-none formxbtn">
+                    <i class="bi bi-x-lg fs4 icon">
+                        <span class="visually-hidden">닫기</span>
                     </i>
                 </a>
             </li>
             <li class="me-2">
-                <a href="javascript:void(0);">
+                <a href="#none">
                     <i class="bi bi-person-fill text-white fs4 icon">
                         <span class="visually-hidden">마이페이지</span> 
                     </i>
                 </a>
             </li>
             <li class="me-2">
-                <a href="javascript:void(0);">
-                    <i class="bi bi-list text-white fs5 menubtn icon">
+                <a href="#none">
+                    <i class="bi bi-list text-white fs4 menubtn icon">
                         <span class="visually-hidden">메뉴</span>
                     </i>
                     <i class="bi bi-x-lg d-none xbtn fs4 icon">
@@ -635,7 +638,9 @@
         const clickme = document.querySelector('.click_me');
         const allbtn = document.querySelector('.menubtn');
         const closebtn = document.querySelector('.xbtn');
-        const serchicion = document.querySelector('.bi-search');
+        const serchicion = document.querySelector('.serch');
+        const formx = document.querySelector('.formxbtn');
+        const formnavi = document.querySelector('.formnavi');
 
         click.addEventListener('click',function(){
             clickme.classList.toggle('d-none');
@@ -645,15 +650,29 @@
             document.getElementById('hd').classList.toggle('showmenu');
             allbtn.classList.toggle('d-none');
             closebtn.classList.remove('d-none');
-            serchicion.classList.add('d-none')
+            serchicion.classList.add('d-none');
+            formnavi.classList.remove('d-none');
         });
 
         closebtn.addEventListener('click', function() {
             document.getElementById('hd').classList.toggle('showmenu');
             allbtn.classList.toggle('d-none');
             closebtn.classList.add('d-none');
-            serchicion.classList.remove('d-none')
+            serchicion.classList.remove('d-none');
+            formnavi.classList.add('d-none');
         });
+
+        serchicion.addEventListener('click',function(){
+            formnavi.classList.toggle('d-none');
+            formx.classList.toggle('d-none');
+            serchicion.classList.toggle('d-none')
+        })
+
+        formx.addEventListener('click',function(){
+            formnavi.classList.toggle('d-none');
+            serchicion.classList.toggle('d-none')
+            formx.classList.add('d-none');
+        })
         
         AOS.init();
 
