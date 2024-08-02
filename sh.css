@@ -231,12 +231,13 @@ body .fs5 {
   height: 800px;
 }
 #mainbanner .main1 .main_txt {
-  top: 22%;
-  left: -45%;
   color: #fff;
   font-size: 11rem;
   line-height: 0.8;
   font-weight: 900;
+  text-align: start;
+  white-space: nowrap;
+  padding-right: 20rem;
 }
 #mainbanner .main2 {
   background-image: url("./img/mainbanner2.jpg");
@@ -253,7 +254,11 @@ body .fs5 {
   height: 800px;
 }
 #mainbanner .main_black {
-  width: 690px;
+  width: 34%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-self: center;
   height: 800px;
   background-color: #000000;
 }
@@ -269,8 +274,7 @@ body .fs5 {
   line-height: 3.3;
 }
 #mainbanner .main_txt {
-  top: 22%;
-  left: 16%;
+  text-align: start;
 }
 #mainbanner .main_txt .main_subtxt {
   color: #fff;
@@ -577,6 +581,13 @@ footer .pl {
     padding: 1.5rem 30px;
     font-size: 0.9rem;
   }
+  #mainbanner .main_black {
+    padding-top: 3rem;
+    width: 50%;
+  }
+  #mainbanner .main_black .main_txt {
+    font-size: 9rem;
+  }
 }
 @media (max-width: 1401px) {
   #hd .gnb {
@@ -598,7 +609,7 @@ footer .pl {
   }
 }
 @media (max-width: 1299px) {
-  body {
+  body.no-scroll {
     overflow-y: hidden;
   }
   #hd.showmenu:before {
@@ -689,5 +700,20 @@ footer .pl {
   }
   .serch {
     display: none;
+  }
+}
+@media (max-width: 1024px) {
+  #mainbanner .main_black {
+    background-color: transparent;
+    position: relative;
+  }
+  #mainbanner .d-flex.justify-content-end.w-100:before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 800px;
+    background-color: #000;
+    opacity: 0.4;
+    position: absolute;
   }
 }

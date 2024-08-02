@@ -284,13 +284,13 @@ body{
 
        
         .main_txt{
-            
-            top: 22%;
-            left: -45%;
             color: #fff;
             font-size: 11rem;
             line-height: 0.8;
             font-weight: 900;
+            text-align: start;
+            white-space: nowrap;
+            padding-right: 20rem;
          
          }
       }
@@ -311,7 +311,11 @@ body{
       }
 
       .main_black{
-        width: 690px;
+        width: 34%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-self: center;
         height: 800px;
         background-color: #000000;
     }
@@ -330,8 +334,7 @@ body{
      
     .main_txt{
 
-        top: 22%;
-        left: 16%;
+        text-align: start;
 
         .main_subtxt{
             color: #fff;
@@ -353,6 +356,7 @@ body{
         background: #fff;
      }
 }
+
 #product{
 
         display: block;
@@ -666,6 +670,9 @@ footer{
 
 /////////// 반응형 //////////////
 
+@media(max-width: 1700px){
+    
+}
 
   
 @media (max-width: 1550px) {
@@ -680,6 +687,18 @@ footer{
         
     }
     } 
+
+    #mainbanner .main_black {
+
+        padding-top: 3rem;
+        width: 50%;
+        
+        .main_txt{
+           
+            font-size: 9rem;
+        }
+    }
+    
 } 
   
 @media(max-width:1401px){
@@ -710,7 +729,7 @@ footer{
 
 
 @media  (max-width: 1299px) { //1300px 이하
-    body{
+    body.no-scroll{
         overflow-y: hidden;
     }
     #hd.showmenu {
@@ -839,4 +858,22 @@ footer{
         display: none;
     }
     
+}
+@media (max-width:1024px) {
+    #mainbanner{
+        .main_black{
+            background-color: transparent;
+            position: relative;
+        }
+        .d-flex.justify-content-end.w-100:before {
+            content: "";
+            display: block;
+            width: 100%;
+            height: 800px;
+            background-color: #000;
+            opacity: 0.4;
+            position: absolute;
+        }
+    }
+
 }
