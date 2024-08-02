@@ -648,7 +648,7 @@
 
         allbtn.addEventListener('click', function() {
             document.getElementById('hd').classList.toggle('showmenu');
-            allbtn.classList.toggle('d-none');
+            allbtn.classList.add('d-none');
             closebtn.classList.remove('d-none');
             serchicion.classList.add('d-none');
             formnavi.classList.remove('d-none');
@@ -660,16 +660,17 @@
             closebtn.classList.add('d-none');
             serchicion.classList.remove('d-none');
             formnavi.classList.add('d-none');
+            formx.classList.add('d-none')
         });
 
         serchicion.addEventListener('click',function(){
-            formnavi.classList.toggle('d-none');
+            formnavi.classList.remove('d-none');
             formx.classList.toggle('d-none');
             serchicion.classList.toggle('d-none')
         })
 
         formx.addEventListener('click',function(){
-            formnavi.classList.toggle('d-none');
+            formnavi.classList.add('d-none');
             serchicion.classList.toggle('d-none')
             formx.classList.add('d-none');
         })
