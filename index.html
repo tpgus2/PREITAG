@@ -207,11 +207,10 @@
             </li>
             <li class="me-2">
                 <a href="#none">
-                    <i class="bi bi-person-fill text-white fs4 icon">
+                    <i class="bi bi-person text-white fs4 icon">
                         <span class="visually-hidden">마이페이지</span> 
-                    </i>
-                </a>
-            </li>
+                    </i> 
+                </a> 
             <li class="me-2">
                 <a href="#none">
                     <i class="bi bi-list text-white fs4 menubtn icon">
@@ -676,14 +675,18 @@
         })
         
         AOS.init();
-
         const gnblis = document.querySelectorAll('.gnb_li');
+
         gnblis.forEach(li => {
             li.addEventListener('click', function() {
-                // 모든 메뉴에서 'action' 클래스를 제거합니다.
-                gnblis.forEach(el => el.classList.remove('action'));
+                
+                if (li.classList.contains('action')) {
+                    li.classList.remove('action');
+                    return;
+                }
 
-                // 클릭된 메뉴에 'action' 클래스를 추가합니다.
+                gnblis.forEach(el => el.classList.remove('action'));
+                
                 li.classList.add('action');
             });
         });

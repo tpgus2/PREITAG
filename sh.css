@@ -3,6 +3,7 @@ body {
   font-family: "helvetica neue", "Noto Sans KR", sans-serif !important;
   padding: 0;
   margin: 0;
+  overflow-x: hidden;
 }
 body a {
   text-decoration: none;
@@ -591,6 +592,10 @@ footer .pl {
     padding: 1.5rem 30px;
     font-size: 0.8rem;
   }
+  #eventbanner .swiper-slide span {
+    font-size: 0.9rem;
+    line-height: 2.5;
+  }
 }
 @media (max-width: 1299px) {
   body {
@@ -611,7 +616,7 @@ footer .pl {
     height: 100vh;
     z-index: 1200;
     padding-left: 2rem;
-    padding-top: 25vh;
+    padding-top: 15vh;
   }
   #hd.showmenu .gnb .gnb_li {
     padding: 0;
@@ -621,7 +626,20 @@ footer .pl {
     padding-right: 3rem;
   }
   #hd.showmenu .gnb .gnb_li.action .gnb_ul {
-    max-height: 200px !important;
+    max-height: 230px !important;
+  }
+  #hd.showmenu .gnb .gnb_li.action .gnb_a:after {
+    content: "\f27c";
+  }
+  #hd.showmenu .gnb .gnb_li .gnb_a:after {
+    content: "\f279";
+    font-family: "bootstrap-icons";
+    display: block;
+    text-align: end;
+    font-size: 1rem;
+    position: absolute;
+    right: 10%;
+    top: 1%;
   }
   #hd.showmenu .gnb .gnb_li .gnb_ul {
     height: auto;
@@ -654,6 +672,10 @@ footer .pl {
 @media (max-width: 767px) {
   body .fs4 {
     font-size: 1.2rem;
+  }
+  #eventbanner .swiper-slide span {
+    font-size: 0.7rem;
+    line-height: 3;
   }
   #hd.showmenu .gnb {
     width: 100vw !important;
