@@ -2,7 +2,7 @@ body{
     font-family: 'helvetica neue','Noto Sans KR', sans-serif !important;
     padding: 0;
     margin: 0;
-    overflow-x: hidden;
+    //overflow-x: hidden;
 
     a{
         text-decoration: none;
@@ -85,7 +85,12 @@ body{
 
 #eventbanner{
 
+    position: fixed;
+    top: 0;
     height: 35px;
+    background-color: #fff;
+    width: 100%;
+    z-index: 1000;
 
     .swiper-slide {
         
@@ -105,6 +110,11 @@ body{
 
 
 #hd{
+
+    top: 35px;
+    width: 100%;
+    z-index: 1000;
+
     &.showmenu{ // 데스트탑 전체메뉴
         &:before{
             content: "";
@@ -175,6 +185,8 @@ body{
     .gnb{
         display: flex;
         align-items: center;
+        justify-content: center;
+
         .gnb_li{
             z-index: 1000;
             padding-top: 1.5rem;
@@ -690,6 +702,9 @@ footer{
 
 
 @media  (max-width: 1299px) { //1300px 이하
+    body{
+        overflow-y: hidden;
+    }
     #hd.showmenu {
         &:before{
             opacity: 0;
@@ -697,6 +712,7 @@ footer{
         .gnb{
             flex-direction: column;
             align-items: start;
+            justify-content: start;
             background-color: #000;
             position: absolute;
             right: 0;
@@ -705,6 +721,7 @@ footer{
             height: 100vh;
             z-index: 1200;
             padding-left: 2rem;
+            padding-top: 25vh;
 
             .gnb_li{
 
@@ -765,10 +782,15 @@ footer{
 
 @media (max-width: 767px) {
     body{
+        
+
         .fs4 {
             font-size: 1.2rem;
         }
+        
     }
+            
+    
     #hd.showmenu {
     
         .gnb{
@@ -778,7 +800,7 @@ footer{
         
         .formnavi{
             left: 3%;
-            
+
             input{
                 width: 200px;
             }
