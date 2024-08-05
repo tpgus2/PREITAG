@@ -901,7 +901,7 @@ footer{
             .main_black{
                 .main_txt {
                     font-size: 6.5rem;
-                    padding-top: 0;
+                    padding: 0;
                     line-height: 1;
                 }
             }
@@ -909,9 +909,19 @@ footer{
         .main_black{
             
             .main_txt {
-          
-
-             }
+                .main_title{
+                    font-size: 2rem;
+                    line-height: 1;
+                }
+                .main_a{
+                    width: 330px;
+                    font-size: 1.2rem;
+                    line-height: 4.1;
+                }
+                .main_subtxt{
+                    margin: 100px 0;
+                }
+            }
         }
 
     }
@@ -968,15 +978,40 @@ footer{
 }
 
 @media (max-width:375px) {
+
+    #hd.showmenu .formnavi {
+        left: 5%;
+    }
+
     #mainbanner{
-       
+
+       .main1{
+            .main_black{
+
+                .main_txt {
+                    font-size: 3.2rem;
+                    padding-top: 0;
+
+                }   
+            }
+       }
+      
         .main_black{
-
+            
             .main_txt {
-            font-size: 3rem;
-            padding-top: 0;
-
-        }
+                .main_title{
+                    font-size: 2rem;
+                    line-height: 1;
+                }
+                .main_a{
+                    width: 330px;
+                    font-size: 1.2rem;
+                    line-height: 4.1;
+                }
+                .main_subtxt{
+                    margin: 100px 0;
+                }
+            }
         }
     }
 }
@@ -989,4 +1024,25 @@ footer{
             display: block;
         }
     }
+}
+
+@media (max-width:320px) {
+    #mainbanner{
+
+        
+         .main_black{
+             
+             .main_txt {
+                .main_title{
+                 
+                 }
+                .main_a{
+                    width: 290px;
+                }
+                .main_subtxt{
+     
+                 }
+             }
+         }
+     }
 }

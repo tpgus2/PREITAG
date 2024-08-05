@@ -726,8 +726,20 @@ footer .pl {
   }
   #mainbanner .main1 .main_black .main_txt {
     font-size: 6.5rem;
-    padding-top: 0;
+    padding: 0;
     line-height: 1;
+  }
+  #mainbanner .main_black .main_txt .main_title {
+    font-size: 2rem;
+    line-height: 1;
+  }
+  #mainbanner .main_black .main_txt .main_a {
+    width: 330px;
+    font-size: 1.2rem;
+    line-height: 4.1;
+  }
+  #mainbanner .main_black .main_txt .main_subtxt {
+    margin: 100px 0;
   }
   #eventbanner .swiper-slide span {
     font-size: 0.7rem;
@@ -757,9 +769,24 @@ footer .pl {
   }
 }
 @media (max-width: 375px) {
-  #mainbanner .main_black .main_txt {
-    font-size: 3rem;
+  #hd.showmenu .formnavi {
+    left: 5%;
+  }
+  #mainbanner .main1 .main_black .main_txt {
+    font-size: 3.2rem;
     padding-top: 0;
+  }
+  #mainbanner .main_black .main_txt .main_title {
+    font-size: 2rem;
+    line-height: 1;
+  }
+  #mainbanner .main_black .main_txt .main_a {
+    width: 330px;
+    font-size: 1.2rem;
+    line-height: 4.1;
+  }
+  #mainbanner .main_black .main_txt .main_subtxt {
+    margin: 100px 0;
   }
 }
 .brrwd br {
@@ -768,5 +795,11 @@ footer .pl {
 @media (max-width: 575px) {
   .brrwd br {
     display: block;
+  }
+}
+
+@media (max-width: 320px) {
+  #mainbanner .main_black .main_txt .main_a {
+    width: 290px;
   }
 }
