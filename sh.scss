@@ -1,5 +1,5 @@
 body{
-    font-family: 'helvetica neue','Noto Sans KR', sans-serif !important;
+    font-family: 'Helvetica Neue','Noto Sans KR', sans-serif !important;
     padding: 0;
     margin: 0;
     overflow-x: hidden;
@@ -17,7 +17,7 @@ body{
     }
     .maintxt{
         color: #000;
-        font-family: 'Helvetica73-Extended',"Noto Sans KR", sans-serif;
+        font-family: "Helvetica73","Noto Sans KR", sans-serif;
         font-size: 2.5rem;
         font-style: normal;
         font-weight: 700;
@@ -29,16 +29,15 @@ body{
         font-family: "Noto Sans KR", sans-serif;
         font-size: 1.15rem;
         font-style: normal;
-        font-weight: 400;
+       // font-weight: 400;
         line-height: normal;
     }
     
     .subproduct{
         color: #fff;
-        font-family: 'Helvetica75',"Noto Sans KR", sans-serif;
-        font-size: 2rem;
+        font-family: 'Helvetica73',"Noto Sans KR", sans-serif;
+        font-size: 1.8rem;
         font-style: normal;
-        font-weight: 700;
         line-height: normal;
         letter-spacing: -1.36px;
         opacity: 1;
@@ -252,8 +251,6 @@ body{
 
 #mainbanner{
 
-    font-family: 'helvetica-neue';
-
     .swiper {
         width: 100%;
         height: 100%;
@@ -280,17 +277,18 @@ body{
         background-repeat: no-repeat;
         background-size: cover;
         width: 1920px;
-        height: 800px;
+        height: 100vh;
 
        
         .main_txt{
             color: #fff;
             font-size: 11rem;
             line-height: 0.8;
-            font-weight: 900;
+            font-family: 'Helvetica Black';
             text-align: start;
             white-space: nowrap;
-            padding-right: 20rem;
+            padding-right: 30rem;
+            padding-top: 5rem;
          
          }
       }
@@ -299,7 +297,7 @@ body{
         background-repeat: no-repeat;
         background-size: cover;
         width: 1920px;
-        height: 800px;
+        height: 100vh;
        
       }
       .main3{
@@ -307,7 +305,7 @@ body{
         background-repeat: no-repeat;
         background-size: cover;
         width: 1920px;
-        height: 800px;
+        height: 100vh;
       }
 
       .main_black{
@@ -316,7 +314,7 @@ body{
         flex-direction: column;
         align-items: center;
         justify-self: center;
-        height: 800px;
+        height: 100vh;
         background-color: #000000;
     }
       .main_a{
@@ -333,7 +331,7 @@ body{
 
      
     .main_txt{
-
+        padding-top: 8rem;
         text-align: start;
 
         .main_subtxt{
@@ -347,8 +345,7 @@ body{
         .main_title{
             color: #fff;
             font-size: 3rem;
-            font-weight: 600;
-          
+            font-weight: 500;
         }
      
      }
@@ -381,7 +378,7 @@ body{
     
     h2{
         color: #fff;
-        font-family: "Helvetica73-Extended";
+        font-family: "Helvetica73";
         font-size: 2.5rem;
         font-style: normal;
         font-weight: 700;
@@ -398,9 +395,8 @@ body{
     }
     .point_txt{
         color: #fff;
-        font-family: "Helvetica53-Extended";
         font-size: 153px;
-        font-weight: 400;
+        font-family: 'HelveticaNeue-Condensed';
         line-height: normal;
         text-align: end;
         padding-right: 2rem;
@@ -458,7 +454,7 @@ body{
         font-family: "Noto Sans KR", sans-serif;
         font-size: 28px;
         font-style: normal;
-        font-weight: 500;
+        font-weight: 700;
         line-height: normal;
 
     }
@@ -598,6 +594,7 @@ body{
         color: #fff;
         height: 80px;
         font-size: 1.3rem;
+        font-family: 'helvetica73';
 
         &:hover{
            p{
@@ -671,7 +668,16 @@ footer{
 /////////// 반응형 //////////////
 
 @media(max-width: 1700px){
-    
+    #mainbanner {
+
+       .main_black{
+            .main_title{
+                font-size: 2.8rem;
+                padding-top: 5rem;
+            }
+       }
+       
+    }
 }
 
   
@@ -688,16 +694,25 @@ footer{
     }
     } 
 
-    #mainbanner .main_black {
-
-        padding-top: 3rem;
-        width: 50%;
-        
-        .main_txt{
-           
-            font-size: 9rem;
+    #mainbanner {
+        .main1{
+            .main_black{
+                .main_txt{
+                    padding-right: 20rem;
+                }
+            }
         }
-    }
+        .main_black {
+
+            padding-top: 3rem;
+            width: 50%;
+    
+            .main_txt{
+                padding-top: 2rem;
+                font-size: 9rem;
+            }
+        }
+}
     
 } 
   
@@ -807,6 +822,14 @@ footer{
             }
         }
     }
+    #mainbanner {
+        .main_txt {
+        
+            .main_title {
+                font-size: 2.5rem;
+            }
+        }
+    }
 }
 
  
@@ -820,14 +843,77 @@ footer{
     }
 }
 
+@media (max-width:1024px) {
+    #mainbanner{
+       
+    
+        .main_black{
+            background-color: transparent;
+            position: relative;
+            width: 100%; 
+            
+            .main_txt{
+               text-align: center; 
+               padding: 0;
+            } 
+           
+        }
+        .main1{
+            .main_black{
+                .main_txt {
+                    font-size: 8rem;
+                    padding-right: 2rem; 
+                } 
+            }
+        }
+
+        .d-flex.justify-content-end.w-100:before {
+            content: "";
+            display: block;
+            width: 100%;
+            height: 100vh;
+            background-color: #000;
+            opacity: 0.4;
+            position: absolute;
+        }
+    }
+    .onlyF_a{
+        margin: 0 auto;
+    }
+
+}
 @media (max-width: 767px) {
     body{
+
+        .search{
+        display: none;
+    }
         
 
         .fs4 {
             font-size: 1.2rem;
         }
         
+    }
+    #mainbanner{
+       
+        .main1 {
+            .main_black{
+                .main_txt {
+                    font-size: 6.5rem;
+                    padding-top: 0;
+                    line-height: 1;
+                }
+            }
+        }
+        .main_black{
+            
+            .main_txt {
+          
+
+             }
+        }
+
     }
             
     #eventbanner{
@@ -859,21 +945,48 @@ footer{
     }
     
 }
-@media (max-width:1024px) {
+
+@media (max-width:575px) {
     #mainbanner{
-        .main_black{
-            background-color: transparent;
-            position: relative;
+       
+        .main1{
+            .main_black{
+
+                .main_txt {
+                    font-size: 4rem;
+                    padding: 0;
+                }
+            }
         }
-        .d-flex.justify-content-end.w-100:before {
-            content: "";
-            display: block;
-            width: 100%;
-            height: 800px;
-            background-color: #000;
-            opacity: 0.4;
-            position: absolute;
+        .main_black{
+
+            .main_txt {
+                padding-top: 0;
+            }
         }
     }
+}
 
+@media (max-width:375px) {
+    #mainbanner{
+       
+        .main_black{
+
+            .main_txt {
+            font-size: 3rem;
+            padding-top: 0;
+
+        }
+        }
+    }
+}
+
+
+.brrwd{
+    br{
+        display: none;
+        @media (max-width:575px) {
+            display: block;
+        }
+    }
 }

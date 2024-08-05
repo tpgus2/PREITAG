@@ -1,6 +1,6 @@
 @charset "UTF-8";
 body {
-  font-family: "helvetica neue", "Noto Sans KR", sans-serif !important;
+  font-family: "Helvetica Neue", "Noto Sans KR", sans-serif !important;
   padding: 0;
   margin: 0;
   overflow-x: hidden;
@@ -18,7 +18,7 @@ body ul, body li, body p {
 }
 body .maintxt {
   color: #000;
-  font-family: "Helvetica73-Extended", "Noto Sans KR", sans-serif;
+  font-family: "Helvetica73", "Noto Sans KR", sans-serif;
   font-size: 2.5rem;
   font-style: normal;
   font-weight: 700;
@@ -30,15 +30,13 @@ body .subtxt {
   font-family: "Noto Sans KR", sans-serif;
   font-size: 1.15rem;
   font-style: normal;
-  font-weight: 400;
   line-height: normal;
 }
 body .subproduct {
   color: #fff;
-  font-family: "Helvetica75", "Noto Sans KR", sans-serif;
-  font-size: 2rem;
+  font-family: "Helvetica73", "Noto Sans KR", sans-serif;
+  font-size: 1.8rem;
   font-style: normal;
-  font-weight: 700;
   line-height: normal;
   letter-spacing: -1.36px;
   opacity: 1;
@@ -201,9 +199,6 @@ body .fs5 {
   outline: none;
 }
 
-#mainbanner {
-  font-family: "helvetica-neue";
-}
 #mainbanner .swiper {
   width: 100%;
   height: 100%;
@@ -228,30 +223,31 @@ body .fs5 {
   background-repeat: no-repeat;
   background-size: cover;
   width: 1920px;
-  height: 800px;
+  height: 100vh;
 }
 #mainbanner .main1 .main_txt {
   color: #fff;
   font-size: 11rem;
   line-height: 0.8;
-  font-weight: 900;
+  font-family: "Helvetica Black";
   text-align: start;
   white-space: nowrap;
-  padding-right: 20rem;
+  padding-right: 30rem;
+  padding-top: 5rem;
 }
 #mainbanner .main2 {
   background-image: url("./img/mainbanner2.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   width: 1920px;
-  height: 800px;
+  height: 100vh;
 }
 #mainbanner .main3 {
   background-image: url("./img/mainbanner3-1.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   width: 1920px;
-  height: 800px;
+  height: 100vh;
 }
 #mainbanner .main_black {
   width: 34%;
@@ -259,7 +255,7 @@ body .fs5 {
   flex-direction: column;
   align-items: center;
   justify-self: center;
-  height: 800px;
+  height: 100vh;
   background-color: #000000;
 }
 #mainbanner .main_a {
@@ -274,6 +270,7 @@ body .fs5 {
   line-height: 3.3;
 }
 #mainbanner .main_txt {
+  padding-top: 8rem;
   text-align: start;
 }
 #mainbanner .main_txt .main_subtxt {
@@ -286,7 +283,7 @@ body .fs5 {
 #mainbanner .main_txt .main_title {
   color: #fff;
   font-size: 3rem;
-  font-weight: 600;
+  font-weight: 500;
 }
 #mainbanner .swiper-scrollbar-drag {
   background: #fff;
@@ -314,7 +311,7 @@ body .fs5 {
 }
 #product h2 {
   color: #fff;
-  font-family: "Helvetica73-Extended";
+  font-family: "Helvetica73";
   font-size: 2.5rem;
   font-style: normal;
   font-weight: 700;
@@ -331,9 +328,8 @@ body .fs5 {
 }
 #product .point_txt {
   color: #fff;
-  font-family: "Helvetica53-Extended";
   font-size: 153px;
-  font-weight: 400;
+  font-family: "HelveticaNeue-Condensed";
   line-height: normal;
   text-align: end;
   padding-right: 2rem;
@@ -386,7 +382,7 @@ body .fs5 {
   font-family: "Noto Sans KR", sans-serif;
   font-size: 28px;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 700;
   line-height: normal;
 }
 #zerowaste .swiper {
@@ -509,6 +505,7 @@ body .fs5 {
   color: #fff;
   height: 80px;
   font-size: 1.3rem;
+  font-family: "helvetica73";
 }
 #onlyF .onlyF_a:hover p {
   transform: scale(1.1);
@@ -573,6 +570,12 @@ footer .pl {
   justify-content: center;
 }
 
+@media (max-width: 1700px) {
+  #mainbanner .main_black .main_title {
+    font-size: 2.8rem;
+    padding-top: 5rem;
+  }
+}
 @media (max-width: 1550px) {
   #hd.showmenu .icon {
     font-size: 1.2rem;
@@ -581,11 +584,15 @@ footer .pl {
     padding: 1.5rem 30px;
     font-size: 0.9rem;
   }
+  #mainbanner .main1 .main_black .main_txt {
+    padding-right: 20rem;
+  }
   #mainbanner .main_black {
     padding-top: 3rem;
     width: 50%;
   }
   #mainbanner .main_black .main_txt {
+    padding-top: 2rem;
     font-size: 9rem;
   }
 }
@@ -673,6 +680,9 @@ footer .pl {
   #hd .gnb .gnb_ul {
     max-height: 0px;
   }
+  #mainbanner .main_txt .main_title {
+    font-size: 2.5rem;
+  }
 }
 @media (min-width: 1300px) and (max-width: 1400px) {
   #hd.showmenu .gnb_li {
@@ -680,9 +690,44 @@ footer .pl {
     font-size: 0.85rem;
   }
 }
+@media (max-width: 1024px) {
+  #mainbanner .main_black {
+    background-color: transparent;
+    position: relative;
+    width: 100%;
+  }
+  #mainbanner .main_black .main_txt {
+    text-align: center;
+    padding: 0;
+  }
+  #mainbanner .main1 .main_black .main_txt {
+    font-size: 8rem;
+    padding-right: 2rem;
+  }
+  #mainbanner .d-flex.justify-content-end.w-100:before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100vh;
+    background-color: #000;
+    opacity: 0.4;
+    position: absolute;
+  }
+  .onlyF_a {
+    margin: 0 auto;
+  }
+}
 @media (max-width: 767px) {
+  body .search {
+    display: none;
+  }
   body .fs4 {
     font-size: 1.2rem;
+  }
+  #mainbanner .main1 .main_black .main_txt {
+    font-size: 6.5rem;
+    padding-top: 0;
+    line-height: 1;
   }
   #eventbanner .swiper-slide span {
     font-size: 0.7rem;
@@ -702,18 +747,26 @@ footer .pl {
     display: none;
   }
 }
-@media (max-width: 1024px) {
-  #mainbanner .main_black {
-    background-color: transparent;
-    position: relative;
+@media (max-width: 575px) {
+  #mainbanner .main1 .main_black .main_txt {
+    font-size: 4rem;
+    padding: 0;
   }
-  #mainbanner .d-flex.justify-content-end.w-100:before {
-    content: "";
+  #mainbanner .main_black .main_txt {
+    padding-top: 0;
+  }
+}
+@media (max-width: 375px) {
+  #mainbanner .main_black .main_txt {
+    font-size: 3rem;
+    padding-top: 0;
+  }
+}
+.brrwd br {
+  display: none;
+}
+@media (max-width: 575px) {
+  .brrwd br {
     display: block;
-    width: 100%;
-    height: 800px;
-    background-color: #000;
-    opacity: 0.4;
-    position: absolute;
   }
 }
