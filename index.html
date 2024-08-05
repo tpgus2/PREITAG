@@ -275,52 +275,51 @@
         </div>
     </section>
     
-
-      <section id="product" class="overflow-hidden">
-        <div class="container pt80 mb-3">
+    <section id="product" class="overflow-hidden">
+        <div class="container pt200 mb-3">
             <h2>PRODUCT</h2>
-            <span class="product_subtxt">낡아 버려질 것들이 세상에 단 하나뿐인 실용적이고 도시적인 프라이탁 제품으로 완성됩니다.</span>
-         </div>
-        <div class="d-flex justify-content-center align-items-center">
-            <div class="position-relative">
-                <a href="#none" class="d-block position-relative">
-                    <div class="overlay position-absolute d-flex align-items-end justify-content-start">
-                        <span class="subproduct">BAGS</span>
-                    </div>
-                    <img src="./img/product1.jpg" alt="" class="">
-                </a>
-            </div>
-            <div>
-                <a href="#none" class="d-block position-relative">
-                    <div class="overlay position-absolute d-flex align-items-end justify-content-start">
+            <span class="product_subtxt d-none d-lg-block">낡아 버려질 것들이 세상에 단 하나뿐인 실용적이고 도시적인 프라이탁 제품으로 완성됩니다.</span>
+            <span class="product_subtxt d-lg-none">낡아 버려질 것들이 하나뿐인 프라이탁 제품으로 완성됩니다.</span>
+        </div>
+        <div class="inner1824 mx-auto position-relative">
+            <div class="swiper productSwiper">
+                <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <a href="#none" class="d-block position-relative product_a">
+                        <img src="./img/product1.jpg" alt="가방" class="d-block ">
+                         <span class="subproduct">BAGS</span>
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#none" class="d-block position-relative product_a">
+                        <img src="./img/product2.jpg" alt="악세사리">
                         <span class="subproduct">ACC</span>
-                    </div>
-                    <img src="./img/product2.jpg" alt="">
-                </a>
-            </div>
-            <div>
-                <a href="#none" class="d-block position-relative">
-                    <div class="overlay position-absolute d-flex align-items-end justify-content-start">
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#none" class="d-block position-relative product_a">
+                        <img src="./img/product3.jpg" alt="의류">
                         <span class="subproduct">APPRAREL</span>
-                    </div>
-                    <img src="./img/product3.jpg" alt="">
-                </a>
-            </div>
-            <div>
-                <a href="#none" class="d-block position-relative">
-                    <div class="overlay position-absolute d-flex align-items-end justify-content-start">
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#none" class="d-block position-relative product_a">
+                        <img src="./img/product4.jpg" alt="커스텀마이징">  
                         <span class="subproduct">F-CUT</span>
-                    </div>   
-                    <img src="./img/product4.jpg" alt="">
-                </a>
-            </div>
-            <div>
-                <a href="#none" class="d-block position-relative">
-                    <div class="overlay position-absolute d-flex align-items-end justify-content-start">
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#none" class="d-block position-relative product_a">
+                        <img src="./img/product5.jpg" alt="기타">
                         <span class="subproduct">OTHER</span>
-                    </div>   
-                    <img src="./img/product5.jpg" alt="">
-                </a>
+                    </a>
+                </div>
+                </div>
+              
+            </div>
+            <div class="position-absolute swiperbtn">    
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
             </div>
         </div>
         <p class="point_txt">PREITAG</p>
@@ -589,7 +588,9 @@
       <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
       <script>
-        
+
+        AOS.init();
+
         let mainSwiper = new Swiper(".mainSwiper", {
             effect: 'fade',
             // fadeEffect: { crossFade: true },
@@ -603,7 +604,22 @@
             // // 사용자가 슬라이드를 터치하거나 스와이프한 후에도 자동 재생이 계속되도록 설정
             // }
         });
-   
+
+        let productSwiper = new Swiper(".productSwiper", {
+              navigation: {
+                nextEl: ".swiperbtn .swiper-button-next",
+                prevEl: ".swiperbtn .swiper-button-prev",
+              },
+              slidesPerView: 'auto',
+                //loop: true,
+                spaceBetween: 0,
+                clickable: true
+        //     autoplay: {
+        //     delay: 2000, 
+        //     disableOnInteraction: false
+        // }
+
+        });
 
         let  zeroSwiper = new Swiper('.zeroSwiper', {
             slidesPerView: 'auto',
@@ -633,7 +649,7 @@
         clickable: true,
         });
       
-        // 자바스크립트
+        ////////// 자바스크립트 ///////////
         
         const click = document.querySelector('.click');
         const clickme = document.querySelector('.click_me');
@@ -678,7 +694,7 @@
             formx.classList.add('d-none');
         })
         
-        AOS.init();
+        
         const gnblis = document.querySelectorAll('.gnb_li');
 
         gnblis.forEach(li => {
@@ -694,7 +710,6 @@
                 li.classList.add('action');
             });
         });
-
 
      </script>
 </body>
