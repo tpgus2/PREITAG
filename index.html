@@ -72,7 +72,7 @@
                 </div>
             </div>
     </div>
-    <header id="hd" class="d-flex justify-content-between px-4 align-items-center position-fixed">
+    <header id="hd" class="d-flex justify-content-between px-sm-4 align-items-center position-fixed">
         <h1 class="mb-0 h-100">
             <a href="" class="d-block">
                 <img src="./img/logo.png" alt="" class="h-100 w-100 img-fluid">
@@ -276,8 +276,8 @@
     </section>
     
     <section id="product" class="overflow-hidden">
-        <div class="container pt200 mb-3">
-            <h2>PRODUCT</h2>
+        <div class="container-lg pt200 mb-3">
+            <h2 class="maintxt">PRODUCT</h2>
             <span class="product_subtxt d-none d-lg-block">낡아 버려질 것들이 세상에 단 하나뿐인 실용적이고 도시적인 프라이탁 제품으로 완성됩니다.</span>
             <span class="product_subtxt d-lg-none">낡아 버려질 것들이 하나뿐인 프라이탁 제품으로 완성됩니다.</span>
         </div>
@@ -325,7 +325,7 @@
         <p class="point_txt">PREITAG</p>
       </section>
       <section id="about_prietag" class="mt200">
-        <div class="container mb-3">
+        <div class="container-lg mb-3">
             <h2 class="maintxt">ABOUT PREITAG</h2>
             <span class="subtxt">계절에 맞는 제품을 만드는 것이 아니라 오래 지속되고 하나뿐인 디자인의 제품을 만듭니다.</span>
          </div>
@@ -337,7 +337,6 @@
                         <span class="position-absolute subproduct small up">POP-UP</span>
                         <span class="d-none article position-absolute small text-white">진행되고 있는 팝업스토어를 확인해보세요</span>
                     </a>
-             
                 </div>
                 <div class="mt20 about_txt">
                     <a href="javascript:void(0);" class="d-block position-relative">
@@ -374,9 +373,11 @@
                     <p class="mb-0">일회성 소비에서 벗어나 더 이상 자원이 낭비되지 않는</p>
                     <p class="mb-0">순환경제로의 전환을 위해 끝임없이 생각하고 행동합니다.</p>
                 </div>
-                <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-pagination"></div>
+
+                <div class="position-absolute zeroSwiperbtn">  
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
             </div>
             <div class="swiperdiv">
                 <div class="swiper zeroSwiper">
@@ -644,9 +645,19 @@
         },
         speed: 15000,
         slidesPerView: "auto",
-        spaceBetween: 100,
         allowTouchMove: false,
         clickable: true,
+        breakpoints: {
+                375: {
+                    spaceBetween: 0
+                },
+                575: {
+                    spaceBetween: 50
+                },
+                767: {
+                    spaceBetween: 100
+                }
+        }
         });
       
         ////////// 자바스크립트 ///////////

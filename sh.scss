@@ -99,6 +99,16 @@ body{
         width: 33.333%;
         max-width: 400px;
 
+        @media (max-width:575px) {
+            max-width: 100%;
+            width: 50%;
+        }
+
+        @media (max-width:375px) {
+            width: 100%;
+            margin-right: 50px;
+        }
+
         span{
             line-height: 2;
             color: #000;
@@ -326,7 +336,7 @@ body{
         font-weight: 600;
         font-size: 1.5rem;
         display: block;
-        width: 450px;
+        width: 470px;
         height: 80px;
         background-color: #fff;
         text-align: center;
@@ -389,14 +399,22 @@ body{
         position: unset !important;
     }
 
-    .swiper-button-prev::after, .swiper-button-next::after{
+    .swiper-button-prev::after{
+        content: "◀";
+        font-size: 2rem;
+        margin-right: 1rem;
+    } 
+    .swiper-button-next::after{
+        content: "▶";
         font-size: 2rem;
     }
+
     .swiperbtn{
         display: flex;
         top: -10%;
         right: 0;
         padding-right: 2rem;
+
     }
     
     .product_a{
@@ -420,14 +438,8 @@ body{
     }
    
     
-    h2{
+    .maintxt{
         color: #fff;
-        font-family: "Helvetica73";
-        font-size: 2.5rem;
-        font-style: normal;
-        font-weight: 700;
-        line-height: normal;
-        letter-spacing: -1.76px;
     }
     .product_subtxt{
         color: #fff;
@@ -523,29 +535,28 @@ body{
     .swiperdiv{
         width: calc(50% + 249px);
         height: 100%;
-       
+    }
+    .swiper-button-prev, .swiper-button-next{
+        color: #000;
+        position: unset !important;
     }
 
+    .zeroSwiperbtn{
+        bottom: 0;
+        right: 3rem;
+        display: flex;
+        align-items: center;
+    }
     .swiper-button-prev:after {
         content: "◀";
-        font-family: 'swiper-icons';
         font-size: 2rem;
-        text-transform: none !important;
-        color: #000;
-        position: absolute;
-        top: 250%;
-        right: -590px;
+        margin-right: 1rem;
     }
     .swiper-button-next:after {
         content: "▶";
-        font-family: 'swiper-icons';
         font-size: 2rem;
-        text-transform: none !important;
-        color: #000;
-        position: absolute;
-        top: 250%;
-        left: -39px;
     }
+
     .backgroundimg{
         background-repeat: no-repeat;
         background-size: cover;
@@ -924,6 +935,14 @@ footer{
     }
 
 }
+
+@media (max-width:992px) {
+    #product {
+        .point_txt {
+            font-size: 120px;
+        }
+    }
+}
 @media (max-width: 767px) {
     body{
 
@@ -935,7 +954,10 @@ footer{
         .fs4 {
             font-size: 1.2rem;
         }
-        
+
+        .main_txt, .maintxt{
+            font-size: 2rem;
+        }
     }
     #mainbanner{
        
@@ -995,10 +1017,31 @@ footer{
     .serch{
         display: none;
     }
-    
+    #product {
+        
+        height: 780px;
+
+        .point_txt {
+            font-size: 100px;
+        }
+        .swiperbtn{
+            .swiper-button-prev:after,
+            .swiper-button-next:after{
+                font-size: 1.7rem;
+                margin-right: 0;
+            }
+        }
+    }
 }
 
 @media (max-width:575px) {
+    body{
+
+        .main_txt, .maintxt{
+            font-size: 1.5rem;
+        }
+    }
+   
     #mainbanner{
        
         .main1{
@@ -1015,6 +1058,17 @@ footer{
             .main_txt {
                 padding-top: 0;
             }
+        }
+    }
+    #product{
+
+        height: 740px;
+
+        .product_subtxt{
+            display: none;
+        }
+        .point_txt{
+            font-size: 80px;
         }
     }
 }
@@ -1055,6 +1109,12 @@ footer{
                 }
             }
         }
+    }
+    #product {
+        .point_txt {
+          font-size: 60px;
+          padding-right: 1rem;
+        } 
     }
 }
 
