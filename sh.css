@@ -343,8 +343,7 @@ body .margin48 {
 #product .swiperbtn {
   display: flex;
   top: -10%;
-  right: 0;
-  padding-right: 2rem;
+  right: 1rem;
 }
 #product .product_a {
   background-color: #000;
@@ -495,7 +494,7 @@ body .margin48 {
   }
 }
 #zerowaste {
-  height: 300px;
+  height: auto;
 }
 #zerowaste .zerotxt {
   width: calc(50% - 249px);
@@ -569,10 +568,59 @@ body .margin48 {
 }
 @media (max-width: 1440px) {
   #zerowaste .zerotxt {
-    width: calc(50% - 150px);
+    width: calc(50% - 200px);
   }
   #zerowaste .swiperdiv {
-    width: calc(50% + 150px);
+    width: calc(50% + 200x);
+  }
+}
+@media (max-width: 1300px) {
+  #zerowaste .dnone {
+    display: none;
+  }
+}
+@media (max-width: 1200px) {
+  #zerowaste .zerotxt {
+    width: 100%;
+    height: auto;
+    padding-left: 1rem;
+    margin-bottom: 1rem;
+  }
+  #zerowaste .zerotxt p {
+    font-size: 1.15rem;
+    display: inline-block;
+  }
+  #zerowaste .zerotxt .dnone1 {
+    display: none;
+  }
+  #zerowaste .swiperdiv {
+    width: 100%;
+  }
+  #zerowaste .subtitle {
+    font-size: 26px;
+    margin-bottom: 0.5rem;
+    margin-left: 1rem;
+  }
+  #zerowaste .title_df {
+    align-items: center;
+  }
+}
+@media (max-width: 768px) {
+  #zerowaste .dnone2 {
+    display: none;
+  }
+  #zerowaste .zeroSwiperbtn {
+    right: 1rem;
+  }
+  #zerowaste .swiper-button-next:after,
+  #zerowaste .swiper-button-prev:after {
+    font-size: 1.7rem;
+    margin-right: 0;
+  }
+}
+@media (max-width: 575px) {
+  #zerowaste .zeroSwiperbtn {
+    top: 50%;
   }
 }
 
@@ -586,24 +634,41 @@ body .margin48 {
 }
 #from_truck .air_p {
   font-size: 2rem;
-  margin-bottom: 1rem;
+  letter-spacing: -1.36px;
 }
 #from_truck .morebtn {
   color: #000;
-  background-color: #fff;
-  opacity: 0.5;
+  background-color: rgba(255, 255, 255, 0.5);
   width: 450px;
   height: 80px;
 }
 #from_truck .morebtn:hover {
-  opacity: 1;
+  background-color: rgb(255, 255, 255);
 }
 #from_truck .morebtn p {
-  opacity: 1;
   font-weight: 400;
   font-size: 1.4rem;
   text-align: center;
   line-height: 3.5;
+}
+@media (max-width: 993px) {
+  #from_truck .air_p {
+    font-size: 1.8rem;
+  }
+  #from_truck .morebtn {
+    max-width: 450px;
+    width: auto;
+  }
+  #from_truck .morebtn p {
+    font-size: 1.2rem;
+    line-height: 4;
+  }
+}
+@media (max-width: 768px) {
+  #from_truck .morebtn {
+    max-width: 350px;
+    margin: 0 auto;
+  }
 }
 
 #brandnews .moretxt {
@@ -921,7 +986,7 @@ footer .pl {
   body .main_txt, body .maintxt {
     font-size: 1.5rem;
   }
-  body .subtxt {
+  body *.subtxt {
     display: none;
   }
   #mainbanner .main_black .main_txt {

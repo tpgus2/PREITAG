@@ -413,8 +413,7 @@ body{
     .swiperbtn{
         display: flex;
         top: -10%;
-        right: 0;
-        padding-right: 2rem;
+        right: 1rem;
 
     }
     
@@ -611,7 +610,7 @@ body{
     }
 }
 #zerowaste{
-    height: 300px;
+    height: auto;
 
     .zerotxt{
         width: calc(50% - 249px);
@@ -695,16 +694,75 @@ body{
 
     @media (max-width:1440px) {
         .zerotxt{
-            width: calc(50% - 150px);
+            width: calc(50% - 200px);
         
         }
         .swiperdiv {
-            width: calc(50% + 150px);
+            width: calc(50% + 200x);
+        }
+    }
+
+    @media (max-width:1300px) {
+        .dnone{
+            display: none;
+        }
+    }
+
+    @media (max-width:1200px) {
+        .zerotxt{
+
+            width: 100%;
+            height: auto;
+            padding-left: 1rem;
+            margin-bottom: 1rem;
+            
+            p {
+                font-size: 1.15rem;
+                display: inline-block;
+            }
+            .dnone1{
+                display: none;
+            }
+        }
+        .swiperdiv {
+            width: 100%;
+        }
+    
+        .subtitle {
+            font-size: 26px;
+            margin-bottom: .5rem;
+            margin-left: 1rem;
+        }
+        .title_df{
+            align-items: center;
+        }
+    }
+
+    @media (max-width:993px) {
+
+      
+    }
+    @media (max-width:768px) {
+        .dnone2{
+            display: none;
+        }
+        .zeroSwiperbtn{
+            right: 1rem;
+        }
+        .swiper-button-next:after,
+        .swiper-button-prev:after {
+            font-size: 1.7rem;
+            margin-right: 0;
+        }
+    }
+    @media (max-width:575px) {
+        .zeroSwiperbtn {
+            top: 50%;
         }
     }
 }
 #from_truck{
-
+ 
     .airbag{
         background-image: url('./img/airbags.jpg');
         background-repeat: no-repeat;
@@ -716,27 +774,46 @@ body{
     }
     .air_p{
         font-size: 2rem;
-        margin-bottom: 1rem;
+        letter-spacing: -1.36px;
     }
 
     .morebtn{
         color: #000;
-        background-color: #fff;
-        opacity: 0.5;
+        background-color: rgba(255, 255, 255, .5);
         width: 450px;
         height: 80px;
         &:hover{
-            opacity: 1;
+            background-color: rgba(255, 255, 255, 1);
         }
         p{
-            opacity: 1;
             font-weight: 400;
             font-size: 1.4rem;
             text-align: center;
             line-height: 3.5
         }
+    }
 
+    @media (max-width:993px) {
+        .air_p {
+            font-size: 1.8rem;
+        }
+        .morebtn{
 
+            max-width: 450px;
+            width: auto;
+
+            p{
+                font-size: 1.2rem;
+                line-height: 4;
+            }
+        }
+    }
+    @media (max-width:768px) {
+        .morebtn{
+
+            max-width: 350px;
+            margin: 0 auto;
+        }
     }
 }
 #brandnews{
@@ -1168,6 +1245,8 @@ footer{
             font-size: 100px;
         }
         .swiperbtn{
+
+        
             .swiper-button-prev:after,
             .swiper-button-next:after{
                 font-size: 1.7rem;
@@ -1183,7 +1262,7 @@ footer{
         .main_txt, .maintxt{
             font-size: 1.5rem;
         }
-        .subtxt{
+        *.subtxt{
             display: none;
         }
     }
