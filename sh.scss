@@ -297,13 +297,13 @@ body{
        
         .main_txt{
             color: #fff;
-            font-size: 11rem;
+            font-size: 9vw;
             line-height: 0.8;
             font-family: 'Helvetica Black';
             text-align: start;
             white-space: nowrap;
-            padding-right: 30rem;
-            padding-top: 5rem;
+            padding-right: 20vw;
+            padding-top: 5vw;
          
          }
       }
@@ -478,8 +478,18 @@ body{
         width: 40%;
         margin: 0 20px;
     }
+
+    .bg{
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        max-width: 100%;
+        height: 100%;
+    }
+
     .bgimg1{
-        background-image: url('./img/popup.jpg')
+        background-image: url('./img/popup.jpg');
+        background-size: 200% auto;
     }
     .bgimg2{
         background-image: url('./img/factory.jpg');
@@ -491,14 +501,7 @@ body{
     .bgimg4{
         background-image: url('./img/cityguidelines.jpg')
     }
-    .bg{
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        max-width: 100%;
-        height: 100%;
-    }
-
+    
 
     .about_txt:hover {
         .up{
@@ -688,6 +691,17 @@ body{
     .slide3{
         background-image: url('./img/history3.jpg');
     }
+
+
+    @media (max-width:1440px) {
+        .zerotxt{
+            width: calc(50% - 150px);
+        
+        }
+        .swiperdiv {
+            width: calc(50% + 150px);
+        }
+    }
 }
 #from_truck{
 
@@ -832,16 +846,7 @@ footer{
 /////////// 반응형 //////////////
 
 @media(max-width: 1700px){
-    #mainbanner {
 
-       .main_black{
-            .main_title{
-                font-size: 2.25rem;
-                padding-top: 5rem;
-            }
-       }
-       
-    }
 }
 
   
@@ -862,7 +867,7 @@ footer{
         .main1{
             .main_black{
                 .main_txt{
-                    padding-right: 20rem;
+                    font-size: 10vw;
                 }
             }
         }
@@ -872,8 +877,7 @@ footer{
             width: 50%;
     
             .main_txt{
-                padding-top: 2rem;
-                font-size: 9rem;
+                
             }
         }
 }
@@ -993,6 +997,12 @@ footer{
                 font-size: 2.2rem;
             }
         }
+        .main1{
+            .main_txt{
+                padding-right: 10vw;
+            
+            }
+        }
     }
     body {
         .maintxt {
@@ -1033,8 +1043,8 @@ footer{
         .main1{
             .main_black{
                 .main_txt {
-                    font-size: 8rem;
-                    padding-right: 2rem; 
+                    font-size: 12vw;
+                    padding-right: 2vw;
                 } 
             }
         }
@@ -1058,7 +1068,7 @@ footer{
 
 }
 
-@media (max-width:992px) {
+@media (max-width:991px) {
 
     body{
         .maintxt {
@@ -1097,7 +1107,7 @@ footer{
         .main1 {
             .main_black{
                 .main_txt {
-                    font-size: 6.5rem;
+                    font-size: 14vw;
                     padding: 0;
                     line-height: 1;
                 }
@@ -1184,8 +1194,7 @@ footer{
             .main_black{
 
                 .main_txt {
-                    font-size: 4rem;
-                    padding: 0;
+                  
                 }
             }
         }
@@ -1221,8 +1230,6 @@ footer{
             .main_black{
 
                 .main_txt {
-                    font-size: 3.2rem;
-                    padding-top: 0;
 
                 }   
             }

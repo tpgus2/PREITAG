@@ -245,13 +245,13 @@ body .margin48 {
 }
 #mainbanner .main1 .main_txt {
   color: #fff;
-  font-size: 11rem;
+  font-size: 9vw;
   line-height: 0.8;
   font-family: "Helvetica Black";
   text-align: start;
   white-space: nowrap;
-  padding-right: 30rem;
-  padding-top: 5rem;
+  padding-right: 20vw;
+  padding-top: 5vw;
 }
 #mainbanner .main2 {
   background-image: url("./img/mainbanner2.jpg");
@@ -396,8 +396,16 @@ body .margin48 {
   width: 40%;
   margin: 0 20px;
 }
+#about_prietag .bg {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-width: 100%;
+  height: 100%;
+}
 #about_prietag .bgimg1 {
   background-image: url("./img/popup.jpg");
+  background-size: 200% auto;
 }
 #about_prietag .bgimg2 {
   background-image: url("./img/factory.jpg");
@@ -408,13 +416,6 @@ body .margin48 {
 }
 #about_prietag .bgimg4 {
   background-image: url("./img/cityguidelines.jpg");
-}
-#about_prietag .bg {
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  max-width: 100%;
-  height: 100%;
 }
 #about_prietag .about_txt:hover .up {
   transition: 0.5s;
@@ -566,6 +567,14 @@ body .margin48 {
 #zerowaste .slide3 {
   background-image: url("./img/history3.jpg");
 }
+@media (max-width: 1440px) {
+  #zerowaste .zerotxt {
+    width: calc(50% - 150px);
+  }
+  #zerowaste .swiperdiv {
+    width: calc(50% + 150px);
+  }
+}
 
 #from_truck .airbag {
   background-image: url("./img/airbags.jpg");
@@ -692,12 +701,6 @@ footer .pl {
   justify-content: center;
 }
 
-@media (max-width: 1700px) {
-  #mainbanner .main_black .main_title {
-    font-size: 2.25rem;
-    padding-top: 5rem;
-  }
-}
 @media (max-width: 1550px) {
   #hd.showmenu .icon {
     font-size: 1.2rem;
@@ -707,15 +710,11 @@ footer .pl {
     font-size: 0.9rem;
   }
   #mainbanner .main1 .main_black .main_txt {
-    padding-right: 20rem;
+    font-size: 10vw;
   }
   #mainbanner .main_black {
     padding-top: 3rem;
     width: 50%;
-  }
-  #mainbanner .main_black .main_txt {
-    padding-top: 2rem;
-    font-size: 9rem;
   }
 }
 @media (max-width: 1401px) {
@@ -805,6 +804,9 @@ footer .pl {
   #mainbanner .main_txt .main_title {
     font-size: 2.2rem;
   }
+  #mainbanner .main1 .main_txt {
+    padding-right: 10vw;
+  }
   body .maintxt {
     font-size: 2.3rem;
   }
@@ -829,8 +831,8 @@ footer .pl {
     padding: 0;
   }
   #mainbanner .main1 .main_black .main_txt {
-    font-size: 8rem;
-    padding-right: 2rem;
+    font-size: 12vw;
+    padding-right: 2vw;
   }
   #mainbanner .d-flex.justify-content-end.w-100:before {
     content: "";
@@ -848,7 +850,7 @@ footer .pl {
     font-size: 1.5rem;
   }
 }
-@media (max-width: 992px) {
+@media (max-width: 991px) {
   body .maintxt {
     font-size: 2rem;
   }
@@ -870,7 +872,7 @@ footer .pl {
     font-size: 1.4rem;
   }
   #mainbanner .main1 .main_black .main_txt {
-    font-size: 6.5rem;
+    font-size: 14vw;
     padding: 0;
     line-height: 1;
   }
@@ -922,10 +924,6 @@ footer .pl {
   body .subtxt {
     display: none;
   }
-  #mainbanner .main1 .main_black .main_txt {
-    font-size: 4rem;
-    padding: 0;
-  }
   #mainbanner .main_black .main_txt {
     padding-top: 0;
   }
@@ -942,10 +940,6 @@ footer .pl {
 @media (max-width: 375px) {
   #hd.showmenu .formnavi {
     left: 5%;
-  }
-  #mainbanner .main1 .main_black .main_txt {
-    font-size: 3.2rem;
-    padding-top: 0;
   }
   #mainbanner .main_black .main_txt .main_title {
     font-size: 2rem;
